@@ -3,6 +3,12 @@
 	font-family: 'Lato', sans-serif;
 }
 
+body {
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 5%; 
+}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -11,16 +17,16 @@ ul {
 
 li {
 	display: inline;
-	padding: 10px;
+	padding: 15px;
 }
 
-a:link {
-	color: #000000;
+a:link, a:visited {
+	color: #808080;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #D3D3D3;
+	color: #4BC4F2;
 	text-decoration: none;
 }
 
@@ -29,11 +35,56 @@ a:active {
 	text-decoration: none;
 }
 
-.name {
-	float: left;
-	font-weight: 700;
+nav {
+	float: right;
 }
 
-.links {
-	float: right;
+.line-separator {
+	margin-top: 40px;
+	height: 1px;
+	background: #000000;
+}
+
+a.current {
+	color: #000000;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #000000 url("menu-icon.png") center;
+}
+
+
+@media screen and (max-width : 760px){
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #FFFFFF;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
 }
