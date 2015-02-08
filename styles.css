@@ -74,42 +74,74 @@ input {
 	display: none;
 }
 
-.preview {
-	background: #008D00;
-	color: #FFFFFF;
-	text-align: center;
-	width: 90%;
+.art-image {
+	background: #00CC66;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 5px;
+	height: auto;
 }
 
-button:hover {
-	background: #FFFFFF;
+.preview h1 {
+	font-family: 'Noto+Serif', serif;
+	font-style: italic;
+	font-size: 200%;
+	font-weight: 400;
+	line-height: 20%;
+}
+
+.preview p {
+	font-family: 'Noto+Serif', serif;
 	color: #00CC66;
+	font-size: 150%;
+	line-height: 10%;
+	display: block;
+}
+
+.preview {
+	padding: 10px 0 3px 0;
+	background: #00994C;
+	color: #FFFFFF;
+	font-size: 90%;
+	width: 100%;
+	text-indent: 2em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 button {
 	padding: 10px 30px 10px 30px;
-	font-size: 50%;
+	font-size: 80%;
 	border-radius: 10px;
-	background: #008D00;
+	background: #00994C;
 	color: #FFFFFF;
-	border-width: 2px;
-	border-color: #FFFFFF;
-	float: right;
-	margin-top: -80px;
-	margin-right: 60px;
+	border-width: 0;
+	position: relative;
+	top: -50px;
+	left: 20px;
+	z-index: 9999;
 }
 
-.appimage {
-	width: 100%;
+.preview, button {
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+article:hover button, article:hover .preview {
+	background-color: #174C32;
+	color: #FFFFFF;
+}
+
+.app-image {
 	height: auto;
-	margin-top: -20px;
-	padding: 0;
+	width: 100%;
+	display: block;
 }
 
-.selfimage {
+.self-image {
 	width: 330px;
 	height: 330px;
 	background-image: url("self.png");
@@ -120,6 +152,13 @@ button {
 	margin-right: 120px;
 }
 
+@media screen and (max-width : 468px) {
+
+	.preview p {
+		font-size: 120%;
+	}
+
+}
 
 @media screen and (max-width : 768px){
 
@@ -133,7 +172,7 @@ button {
 		margin-top: 20px; 
 	}
 
-	.line-separator2 {
+	.line-separator2, button {
 		display: block;
 	}
 
@@ -141,7 +180,7 @@ button {
 		margin-top: 20px;
 	}
 
-	p {
+	.preview h1, p {
 		text-align: left;
 	}
 
@@ -179,5 +218,9 @@ button {
 		display: block;
 	}
 
+	.selfimage {
+		float: none;
+		margin-right: 0px;
 	}
 
+}
