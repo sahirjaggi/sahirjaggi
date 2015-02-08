@@ -9,8 +9,13 @@ body {
 	margin-top: 80px; 
 }
 
+.content {
+	margin-top: 40px;
+}
+
 p {
-	font-size: 80%;
+	font-size: 100%;
+	line-height: 180%;
 }
 
 ul {
@@ -69,60 +74,110 @@ input {
 	display: none;
 }
 
+.preview {
+	background: #008D00;
+	color: #FFFFFF;
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+button:hover {
+	background: #FFFFFF;
+	color: #00CC66;
+}
+
+button {
+	padding: 10px 30px 10px 30px;
+	font-size: 50%;
+	border-radius: 10px;
+	background: #008D00;
+	color: #FFFFFF;
+	border-width: 2px;
+	border-color: #FFFFFF;
+	float: right;
+	margin-top: -80px;
+	margin-right: 60px;
+}
+
+.appimage {
+	width: 100%;
+	height: auto;
+	margin-top: -20px;
+	padding: 0;
+}
+
+.selfimage {
+	width: 330px;
+	height: 330px;
+	background-image: url("self.png");
+	background-size: cover;
+	display: block;
+	border-radius: 180px;
+	float: left;
+	margin-right: 120px;
+}
+
 
 @media screen and (max-width : 768px){
 
-* {
-	text-align: center;
-}
+	* {
+		text-align: center;
+	}
 
-body {
-	margin-right: 10%;
-	margin-left: 10%;
-	margin-top: 20px; 
-}
+	body {
+		margin-right: 10%;
+		margin-left: 10%;
+		margin-top: 20px; 
+	}
 
-.line-separator2 {
-	display: block;
-}
+	.line-separator2 {
+		display: block;
+	}
 
-h1 {
-	margin-top: 20px;
-}
+	h1 {
+		margin-top: 20px;
+	}
 
-nav {
-	float: none;
-}
+	p {
+		text-align: left;
+	}
 
-li {
-	display: block;
-	padding: 5px;
-	margin-top: 10px;
-	text-align: center;
-}
+	nav {
+		float: none;
+	}
 
-label {
-	display: initial;
-	cursor: pointer;
-	color: #808080;
-	text-align: center;
-}
+	li {
+		display: block;
+		padding: 5px;
+		margin-top: 10px;
+		text-align: center;
+	}
 
-input {
-	display: initial;
-}
+	label {
+		display: initial;
+		cursor: pointer;
+		color: #808080;
+		text-align: center;
+	}
 
-#menu-toggle {
-	display: none;
-}
+	input {
+		display: initial;
+	}
 
-#menu {
-	display: none;
-}
+	#menu-toggle {
+		display: none;
+	}
 
-#menu-toggle:checked + #menu {
-	display: block;
-}
+	#menu {
+		display: none;
+	}
 
-}
+	#menu-toggle:checked + #menu {
+		display: block;
+	}
+
+	}
 
