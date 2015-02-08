@@ -15,19 +15,23 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<!--link rel="icon" href="favicon.ico">
 	<link rel="shortcut icon" href="favicon.ico"-->
+
+	<script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
 	<nav>
-		<a href="#" id="menu-icon"></a>
-		<ul>
+		<label for="menu-toggle" onclick="">MENU</label>  
+		<input type="checkbox" id="menu-toggle"/>  
+		<ul id="menu">
 			<li><a href="index.html" class="current">PORTFOLIO</a></li>
 			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="resume.pdf">RESUME</a></li>
+			<li><a href="resume.pdf" target="_blank">RESUME</a></li>
 			<li><a href="mailto:sahir.jaggi@columbia.edu">EMAIL</a></li>
 		</ul>
 	</nav>
-	<div>
+	<div class="line-separator2"></div>
+	<div class="name">
 		<h1>SAHIR JAGGI</h1>
 	</div>
 	<div class="line-separator"></div>
