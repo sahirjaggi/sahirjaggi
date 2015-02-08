@@ -144,7 +144,7 @@ article:hover button, article:hover .preview {
 .self-image {
 	width: 330px;
 	height: 330px;
-	background-image: url("self.png");
+	background-image: url("myself.png");
 	background-size: cover;
 	display: block;
 	border-radius: 180px;
