@@ -4,13 +4,20 @@
 }
 
 body {
-	margin-right: 15%;
-	margin-left: 15%;
-	margin-top: 80px; 
+	margin-top: 40px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.header {
+	margin-bottom: 40px;
 }
 
 .content {
-	margin-top: 40px;
+}
+
+.about {
+	margin-top: 120px;
 }
 
 p {
@@ -49,19 +56,6 @@ nav {
 	float: right;
 }
 
-.line-separator {
-	margin-top: 40px;
-	height: 1px;
-	background: #000000;
-}
-
-.line-separator2 {
-	margin-top: 20px;
-	height: 1px;
-	background: #000000;
-	display: none;
-}
-
 a.current {
 	color: #000000;
 }
@@ -74,35 +68,22 @@ input {
 	display: none;
 }
 
-.art-image {
-	background: #00CC66;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-}
-
 .preview h1 {
-	font-family: 'Noto+Serif', serif;
-	font-style: italic;
-	font-size: 200%;
-	font-weight: 400;
+	font-size: 160%;
 	line-height: 20%;
 }
 
 .preview p {
-	font-family: 'Noto+Serif', serif;
 	color: #00CC66;
-	font-size: 150%;
-	line-height: 10%;
+	font-size: 100%;
+	line-height: 40%;
 	display: block;
 }
 
 .preview {
-	padding: 10px 0 3px 0;
+	padding: 0.5% 0 0.5% 0;
 	background: #00994C;
 	color: #FFFFFF;
-	font-size: 90%;
 	width: 100%;
 	text-indent: 2em;
 	margin-left: auto;
@@ -110,14 +91,14 @@ input {
 }
 
 button {
-	padding: 10px 30px 10px 30px;
-	font-size: 80%;
-	border-radius: 10px;
+	padding: 1.2% 3% 1.2% 3%;
+	font-size: 85%;
+	border-radius: 30px;
 	background: #00994C;
 	color: #FFFFFF;
 	border-width: 0;
 	position: relative;
-	top: -50px;
+	top: -60px;
 	left: 20px;
 	z-index: 9999;
 }
@@ -135,6 +116,10 @@ article:hover button, article:hover .preview {
 	color: #FFFFFF;
 }
 
+.name {
+	font-size: 90%;
+}
+
 .app-image {
 	height: auto;
 	width: 100%;
@@ -142,23 +127,109 @@ article:hover button, article:hover .preview {
 }
 
 .self-image {
-	width: 330px;
-	height: 330px;
-	background-image: url("myself.png");
+	width: 300px;
+	height: 300px;
+	background-image: url("self.png");
 	background-size: cover;
 	display: block;
-	border-radius: 180px;
+	border-radius: 200px;
 	float: left;
+	margin-right: 100px;
+	margin-top: -20px;
+	margin-left: 140px;
+}
+
+.description {
+	display: block;
+	margin-left: 40px;
+	margin-right: 80px;
+}
+
+.radius-gif {
+	width: auto;
+	height: 90vh;
+	display: block;
+	float: left;
+	margin-right: 0px;
+	margin-top: -40px;
+	margin-left: 0px;
+}
+
+
+.app-des {
+	display: block;
+	margin-left: 0px;
+	margin-right: 60px;
+	margin-top: 80px;
+}
+
+.sketch-des {
+	display: block;
+	margin-left: 0px;
+	margin-right: 60px;
+	margin-top: 130px;
+}
+
+.sketch {
+	width: 340px;
+	height: auto;
+	float: left;
+	display: block;
+	margin-top: 120px;
+	margin-left: 10%;
 	margin-right: 120px;
 }
 
-@media screen and (max-width : 468px) {
+.wireframe {
+	width: 80%;
+	height: auto;
+	margin-top: 120px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
 
-	.preview p {
-		font-size: 120%;
+.userflow {
+	width: 80%;
+	height: auto;
+	margin-top: 120px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.newpost {
+	width: 80%;
+	height: auto;
+	margin-top: 120px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.sections {
+	margin-bottom: 80px;
+}
+
+
+@media screen and (max-width : 926px) {
+
+	.about {
+		margin-top: 0px;
+	}
+
+	.self-image {
+		float: none;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-top: 40px;
+	}
+	
+	.description {
+		margin-left: auto;
+    	margin-right: auto
 	}
 
 }
+
 
 @media screen and (max-width : 768px){
 
@@ -172,16 +243,24 @@ article:hover button, article:hover .preview {
 		margin-top: 20px; 
 	}
 
-	.line-separator2, button {
-		display: block;
-	}
-
 	h1 {
 		margin-top: 20px;
 	}
 
-	.preview h1, p {
+	.preview h1 {
 		text-align: left;
+		font-size: 120%;
+	}
+
+	.preview p {
+		text-align: left;
+		font-size: 80%;
+	}
+
+	button {
+		font-size: 70%;
+		left: 32%;
+		top: -37px;
 	}
 
 	nav {
@@ -218,9 +297,23 @@ article:hover button, article:hover .preview {
 		display: block;
 	}
 
-	.selfimage {
+	.content {
+		margin-top: 20px;
+	}
+
+	.about {
+		margin-top: 0px;
+	}
+
+	.self-image {
 		float: none;
-		margin-right: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+	}
+
+	.header {
+		margin-bottom: 0px;
 	}
 
 }
