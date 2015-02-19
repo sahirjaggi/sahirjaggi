@@ -151,30 +151,17 @@ article:hover button, article:hover .preview {
 	margin-right: 80px;
 }
 
-.radius-gif {
-	width: auto;
-	height: 90vh;
-	display: block;
-	float: left;
-	margin-right: 0px;
-	margin-top: -40px;
-	margin-left: 0px;
-	margin-bottom: -10px;
-}
 
-
-.app-des {
-	display: block;
-	margin-left: 0px;
-	margin-right: 60px;
-	margin-top: 80px;
+.right-col, #intro {
+	font-size: 100%;
+	margin-top: 100px;
 }
 
 .right-col {
 	font-size: 90%;
 	display: block;
 	margin-left: 0px;
-	margin-right: 60px;
+	margin-right: 8%;
 	margin-top: 120px;
 }
 
@@ -186,41 +173,66 @@ article:hover button, article:hover .preview {
 	margin-top: 120px;
 }
 
-.full-col {
-	font-size: 90%;
-	display: block;
-	width: 80%;
-	margin-top: 40px;
-	margin-left: 10%; 
-	margin-right: 10%;
-}
-
 .picture {
 	width: 340px;
 	height: auto;
 	float: left;
 	display: block;
-	margin-top: 100px;
-	margin-left: 11%;
-	margin-right: 11%;
+	margin-left: 8%;
+	margin-right: 12%;
+	margin-bottom: 120px;
+	border: 1px solid; 
+	border-color: #D3D3D3;
+	box-shadow: 10px 10px 5px #888888;
 }
 
-figure {
+.gif {
+	width: auto;
+	height: 80vh;
 	float: left;
 	display: block;
-	margin-left: 7.5%;
-	margin-right: 14.5%;
-	text-align: center;
-	font-size: 80%;
-	line-height: 240%;
+	margin-left: 13%;
+	margin-right: 15.5%;
+	margin-bottom: 110px;
 }
 
-.newpost {
-	width: 80%;
+#sketch {
+	border-right: none;
+	border-bottom: none;
+}
+
+#wire {
+	width: 330px;
+	padding: 5px;
+}
+
+.screen {
+	width: 240px;
 	height: auto;
-	margin-top: 100px;
-	margin-left: 10%;
-	margin-right: 10%;
+	float: left;
+	display: block;
+	margin-bottom: 60px;
+	margin-left: 12.5%;
+	margin-right: 17%;
+	border: 1px solid;
+	border-color: #D3D3D3;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.caption {
+	margin-top: 60px;
+	margin-bottom: 10px;
+	font-size: 85%;
+	text-align: center;
+}
+.full-width {
+	width: 84%;
+	height: auto;
+	margin-left: 8%;
+	margin-right: 8%;
+	border: 1px solid; 
+	border-color: #D3D3D3;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .sections {
@@ -228,7 +240,7 @@ figure {
 }
 
 
-
+/*
 @media screen and (max-width : 926px) {
 
 	.about {
