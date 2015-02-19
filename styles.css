@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .content {
@@ -97,9 +97,9 @@ button {
 	background: #00994C;
 	color: #FFFFFF;
 	border-width: 0;
-	position: relative;
-	top: -60px;
-	left: 20px;
+	margin-top: 38%;
+	margin-right: 2%;
+	float: right;
 	z-index: 9999;
 }
 
@@ -120,10 +120,16 @@ article:hover button, article:hover .preview {
 	font-size: 90%;
 }
 
-.app-image {
-	height: auto;
-	width: 100%;
+.radius {
+	background-image: url("app_preview.png");
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 440px;
+	width: auto;
 	display: block;
+}
+
+.art-image {
 }
 
 .self-image {
@@ -153,6 +159,7 @@ article:hover button, article:hover .preview {
 	margin-right: 0px;
 	margin-top: -40px;
 	margin-left: 0px;
+	margin-bottom: -10px;
 }
 
 
@@ -163,37 +170,39 @@ article:hover button, article:hover .preview {
 	margin-top: 80px;
 }
 
-.sketch-des {
+.right-col {
+	font-size: 90%;
 	display: block;
 	margin-left: 0px;
 	margin-right: 60px;
-	margin-top: 130px;
+	margin-top: 120px;
 }
 
-.sketch {
+#sketch-des {
+	margin-top: 135px;
+}
+
+#flow-des {
+	margin-top: 110px;
+}
+
+.full-col {
+	font-size: 90%;
+	display: block;
+	width: 80%;
+	margin-top: 40px;
+	margin-left: 10%; 
+	margin-right: 10%;
+}
+
+.picture {
 	width: 340px;
 	height: auto;
 	float: left;
 	display: block;
-	margin-top: 120px;
-	margin-left: 10%;
-	margin-right: 120px;
-}
-
-.wireframe {
-	width: 80%;
-	height: auto;
-	margin-top: 120px;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-.userflow {
-	width: 80%;
-	height: auto;
-	margin-top: 120px;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-top: 100px;
+	margin-left: 11%;
+	margin-right: 11%;
 }
 
 .newpost {
@@ -207,6 +216,7 @@ article:hover button, article:hover .preview {
 .sections {
 	margin-bottom: 80px;
 }
+
 
 
 @media screen and (max-width : 926px) {
