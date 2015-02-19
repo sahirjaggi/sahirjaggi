@@ -121,7 +121,7 @@ article:hover button, article:hover .preview {
 }
 
 .radius {
-	background-image: url("app_preview.png");
+	background-image: url("../imgs/app_preview.png");
 	margin-left: 10%;
 	margin-right: 10%;
 	height: 440px;
@@ -135,7 +135,7 @@ article:hover button, article:hover .preview {
 .self-image {
 	width: 300px;
 	height: 300px;
-	background-image: url("self.png");
+	background-image: url("../imgs/self.png");
 	background-size: cover;
 	display: block;
 	border-radius: 200px;
@@ -183,7 +183,7 @@ article:hover button, article:hover .preview {
 }
 
 #flow-des {
-	margin-top: 110px;
+	margin-top: 120px;
 }
 
 .full-col {
@@ -205,10 +205,20 @@ article:hover button, article:hover .preview {
 	margin-right: 11%;
 }
 
+figure {
+	float: left;
+	display: block;
+	margin-left: 7.5%;
+	margin-right: 14.5%;
+	text-align: center;
+	font-size: 80%;
+	line-height: 240%;
+}
+
 .newpost {
 	width: 80%;
 	height: auto;
-	margin-top: 120px;
+	margin-top: 100px;
 	margin-left: 10%;
 	margin-right: 10%;
 }

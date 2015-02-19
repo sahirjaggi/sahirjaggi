@@ -10,11 +10,11 @@
 
 	<meta name="robots" content="noindex, nofollow">
 
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="fav.ico">
-	<link rel="shortcut icon" href="fav.ico">
+	<link rel="icon" href="imgs/fav.ico">
+	<link rel="shortcut icon" href="imgs/fav.ico">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 			<ul id="menu">
 				<li><a href="index.html">PROJECTS</a></li>
 				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="resume.pdf" target="_blank">RESUME</a></li>
+				<li><a href="files/resume.pdf" target="_blank">RESUME</a></li>
 				<li><a href="mailto:sahir.jaggi@columbia.edu">EMAIL</a></li>
 			</ul>
 		</nav>
@@ -36,8 +36,8 @@
 	</div>
 
 	<div class="sections">
-		<a href="radius.gif" target="_blank">
-			<img src="radius.gif" alt="Radius iOS app screens" class="radius-gif">
+		<a href="imgs/radius.gif" target="_blank">
+			<img src="imgs/radius.gif" alt="Radius iOS app screens" class="radius-gif">
 		</a>
 		<div class="app-des">
 			<h1>RADIUS</h1>
@@ -47,8 +47,8 @@
 			<p>From that frustration, Radius was born as a way to discover and share spontaneous & little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>
 		</div>
 
-		<a href="sketch.png">	
-			<img src="sketch.png" alt="Hand-drawn wireframes" class="picture">
+		<a href="imgs/sketch.png">	
+			<img src="imgs/sketch.png" alt="Hand-drawn wireframes" class="picture">
 		</a>
 		<div class="right-col" id="sketch-des">
 			<h1>IDEATION</h1>
@@ -60,32 +60,35 @@
 			<p>Although a map would be the default view, we quickly realized that some sort of stream view would still be necessary. Some users might just prefer a news feed style, but it was also important to think about issues like having a high concentration of markers in a small area. Depending on how we implemented filtering and/or search capabilities, a fully text view could be useful.</p>
 		</div>
 
-		<a href="userflow.png" target="_blank">
-			<img src="userflow_cropped.png" alt="Userflow" class="picture">
+		<a href="imgs/userflow.png" target="_blank">
+			<figure>
+				<img src="imgs/userflow_cropped.png" alt="Userflow" class="picture">
+				<figcaption>Click the image to see the full flowchart!</figcaption>
+			</figure>
 		</a>
 		<div class="right-col" id="flow-des">
-			<p>Mapping out the <a href="userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to achieve the app's purpose and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but we realized it made little sense to go in that direction.</p>
+			<p>Mapping out the <a href="imgs/userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to achieve the app's purpose and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but we realized it made little sense to go in that direction.</p>
 			<p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting. Otherwise, the focus had to be on the posts themselves, with attribution helping us maintain quality. Searching for or sharing events with friends could be useful down the road, but it would be supplementary.</p>
 			<p>Once we threw out the idea of friends, providing full user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important that this information was available to others.</p>
 		</div>
 
-		<a href="wireframe.png" target="_blank">
-			<img src="wireframe_v.png" alt="Wireframes" class="picture">
+		<a href="imgs/wireframe.png" target="_blank">
+			<img src="imgs/wireframe_v.png" alt="Wireframes" class="picture">
 		</a>
 		<div class="right-col">
 			<h1>UI DECISIONS</h1>
 			<p>After hammering out what actually needed to included in the app, we ended up with a set of wireframes (using Balsamiq) that reflected a UI we were relatively happy with. Given that we only had a few pages that needed to be accessible from our "main menu," we were able to get rid of the tab bar. The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
 			<p>Although that placement made it slightly more difficult to access the buttons, especially with the iPhone 6 and 6 Plus, we felt comfortable with it as they were not intended to be accessed often. On the other hand, we wanted to encourage all users to contribute, so the button for adding a new post was placed near the bottom for easy access.</p>
 			<p><br>&nbsp;<br>Another item we went back and forth on a lot was the range slider control on the bottom of the map and stream view pages. Initially, it seemed like it would simplify the process by allowing users to just choose a distance from their current location within which to explore. It quickly became clear that there were a number of issues with slider.</p> 
-			<p>First off, the phone screen is rectangular, and it wouldn't be obvious what we meant by a radius. Additionally, we would have to lock the user to a view centered at their current location to avoid any contradictions. In the end, it seemed much more intuitive to let users move and zoom around the map with the gesture controls they're used to. The stream view would be reconciled to simply display the markers currently visible in the map view.</p>
+			<p>First off, the screen is rectangular, and it wouldn't be obvious what we meant by a radius. Second, we would have to lock the user to a view centered at their current location to avoid any contradictions. It seemed much more intuitive to let users move and zoom around the map with the gesture controls they're used to. The stream view would be reconciled to simply display the markers currently visible in the map view.</p>
 		</div>
 		
 		<div class="right-col">
 		</div>
 		
 
-		<a href="newpost.png" target="_blank">
-			<img src="newpost.png" alt="New post" class="newpost">
+		<a href="imgs/newpost.png" target="_blank">
+			<img src="imgs/newpost.png" alt="New post" class="newpost">
 		</a>
 		
 
