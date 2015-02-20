@@ -30,80 +30,112 @@
 				<li><a href="mailto:sahir.jaggi@columbia.edu">EMAIL</a></li>
 			</ul>
 		</nav>
-		<div class="name">
+		<div id="name">
 			<a href="index.html" class="current"><h1>SAHIR JAGGI</h1></a>
 		</div>
 	</div>
 
-	<div class="sections">
-		<a href="imgs/radius_original.gif" target="_blank">
-			<img src="imgs/radius.gif" alt="App screens" class="gif">
-		</a>
-		<div class="right-col" id="intro">
-			<h1>RADIUS</h1>
-			<p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
-			<p>My friend, Matt Piccolella, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
-			<p>Last summer, we lived in SoHo, which allowed us to take advantage of unplanned activities and events. With our appreciation for spontaneity and surprise, though, sometimes came feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration.</p>
-			<p>From that frustration, Radius was born as a way to discover and share spontaneous and little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>
-		</div>
-
-		<a href="imgs/sketch.png">	
-			<img src="imgs/sketch.png" alt="Sketches" class="picture" id="sketch">
-		</a>
-		<div class="right-col" id="sketch-des">
-			<h1>IDEATION</h1>
-			<p>It felt important that Radius be a map-centric app, as part of our frustration had come from an issue with news feeds. It’s likely that many of the things we imagine being posted on Radius would otherwise be posted on social networks like Facebook and Twitter, but there’s a good chance we’d never see them.</p>
-			<p>The average Facebook user has more than 300 friends, and the average Twitter user follows more than 100 others. It’s often difficult to cut through the noise, this almost inevitably results in me scrolling past things I wish I hadn’t. For example, although I follow Aziz Ansari on Twitter, I somehow missed a Tweet about him giving out tickets to an impromptu show.</p>
-			<p>In addition, Facebook and Twitter offer the ability to share locations, but only in terms of a city or certain establishment. Using markers on a map would allow us to show exact locations, as well as transfer users to a maps app for directions.</p>
-		</div>
-
-		<a href="imgs/userflow.png" target="_blank">
-			<img src="imgs/userflow_cropped.png" alt="Userflow" class="picture">
-		</a>
-		<div class="right-col" id="flow-des">
-			<h1>USERFLOW</h1>
-			<p>Mapping out the <a href="imgs/userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to achieve the app's purpose and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but we realized it made little sense to go in that direction.</p>
-			<p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting. Otherwise, the focus had to be on the posts themselves, with attribution helping us maintain quality.</p>
-			<p>Once we threw out the idea of friends, providing full user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important that this information was available to others.</p>
-		</div>
-
-		<a href="imgs/wireframe_full.png" target="_blank">
-			<img src="imgs/wireframe.png" alt="Wireframes" class="picture" id="wire">
-		</a>
-		<div class="right-col">
-			<h1>UI DECISIONS</h1>
-			<p>After hammering out what actually needed to included in the app, we ended up with a set of wireframes (using Balsamiq) that reflected a UI we were relatively happy with. Given that we only had a few pages that needed to be accessible from our "main menu," we were able to get rid of the tab bar. The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
-			<p>Although that placement made it slightly more difficult to access the buttons, especially with the iPhone 6 and 6 Plus, we felt comfortable with it as they were not intended to be accessed often. On the other hand, we wanted to encourage all users to contribute, so the button for adding a new post was placed near the bottom for easy access.</p>
-			<p>An item we went back and forth on a lot was the range slider control on the bottom of the map and stream view pages. Initially, it seemed like it would simplify the process by allowing users to just choose a distance from their current location within which to explore.</p> 
-			<p> It quickly became clear that there were a number of issues with slider. First off, the screen is rectangular, and it wouldn't be obvious what we meant by a radius. Second, we would have to lock the user to a view centered at their current location to avoid any contradictions. We decided to let users move and zoom around using the intuitive gesture controls they know.</p>
-			<p>We included a stream view, as well, since some users might prefer a news feed, and it would also help with certain issues, such as a high concentration of map markers in a small area. Switching to the stream view would display list of the posts currently visible in the user's map view.</p>
-		</div>
-		
-		<a href="imgs/oldnew.png" target="_blank">
-			<img src="imgs/oldnew.png" alt="Old version of add new" class="screen">
-		</a>
-		<a href="imgs/newnew.png" target="_blank">
-			<img src="imgs/newnew.png" alt="Final version of add new" class="screen">
-		</a>
-		<div class="right-col">
-			<h1>UX DECISIONS</h1>
-			<p>Creating a good user experience for the process of adding a new post was not only the most difficult, but also the most important thing to do. The cleaned up mockup here shows everything we initially thought would have to be included (which was insane). Even after we had decided to remove friend functionality, we had a lot of work to do.</p>
-			<p>For starters, it wasn't until we actually built and used the app that we realized how annoying it was to have to dismiss the keyboard before posting. A "Done" or "Post" button would have to be added to either the navigation bar or somewhere else above the keyboard area.</p>
-			<p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
-			<p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
-
-			<p>When thinking about edge cases, we realized there would be an issue with displaying posts that didn't have photos attached. Given that the intent of a post was to share something currently happening, it seemed reasonable to require a photo to help with quality control. Something we're still considering is allowing multiple photos, especially if other users could add the additional photos when they encountered the same event.</p>
-			<p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we would expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like other "ephemeral apps." Our solution involves asking the user a category for their post (which also helps with filtering) and autogenerating a time which can then be adjusted, if necessary.</p>
-		</div>	
-
-		<a href="imgs/newpost.png" target="_blank">
-			<h6 class="caption">Final storyboard for the process of adding a new post (click to see full size)</h6>
-			<img src="imgs/newpost.png" alt="New post" class="full-width">
-		</a>
-		
-
-	</div>
-
-</body>
-
+	<table id="content">
+	    <tr>
+	        <td>
+	        	<div class="column" id="left">
+                    <a href="imgs/radius_original.gif" target="_blank">
+						<img src="imgs/radius.gif" alt="App screens"/>
+					</a>
+               </div>
+	            <div class="column" id="right">
+	                
+                    <h1>RADIUS</h1>
+					<p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
+					<p>My friend, <a href="https://github.com/mjp2220" target="_blank">Matt Piccolella</a>, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
+					<p>Last summer, we lived in SoHo, which allowed us to take advantage of unplanned activities and events. With our appreciation for spontaneity and surprise, though, sometimes came feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration.</p>
+					<p>From that frustration, Radius was born as a way to discover and share spontaneous and little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>
+	            
+	            </div>
+	        </td>
+	    </tr>
+	    <tr>
+	        <td>
+	        	<div class="column" id="left">
+                    <a href="imgs/sketch.png" target="_blank">	
+						<img src="imgs/sketch.png" alt="Sketches" class="picture color"/>
+					</a>
+	            </div>
+	            <div class="column" id="right">       
+	                <h1>IDEATION</h1>
+					<p>It felt important that Radius be a map-centric app, as part of our frustration had come from an issue with news feeds. It’s likely that many of the things we imagine being posted on Radius would otherwise be posted on social networks like Facebook and Twitter, but there’s a good chance we’d never see them.</p>
+					<p>The average Facebook user has more than 300 friends, and the average Twitter user follows more than 100 others. It’s often difficult to cut through the noise, this almost inevitably results in me scrolling past things I wish I hadn’t.</p>
+					<p>In addition, Facebook and Twitter offer the ability to share locations, but only in terms of a city or certain establishment. Using markers on a map would allow us to show exact locations, as well as transfer users to a maps app for directions.</p>	            
+	            </div>
+	        </td>
+	    </tr>
+	    <tr>
+	        <td>
+	        	<div class="column" id="left">
+                    <a href="imgs/userflow.png" target="_blank">
+						<img src="imgs/userflow_cropped.png" alt="Userflow" class="picture">
+					</a>
+	            </div>
+	            <div class="column" id="right">       
+	                <h1>USERFLOW</h1>
+					<p>Mapping out the <a href="imgs/userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to the app and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but there was little need for all of it.</p>
+					<p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting. Otherwise, the identity of posters would ideally be irrelevant to users.</p>
+					<p>Without friends, providing full public user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important to have that visible to others.</p>    
+	            </div>
+	        </td>
+	    </tr>
+	    <tr>
+	        <td>
+	        	<div class="column" id="left">
+                    <a href="imgs/wireframe_full.png" target="_blank">
+						<img src="imgs/wireframe.png" alt="Wireframes" class="picture" id="wire">
+					</a>
+	            </div>
+	            <div class="column" id="right">       
+	                <h1>UI DECISIONS</h1>
+					<p>After hammering out what actually needed to included in the app, we were able to put togehter wireframes that reflected a UI we felt was intuitive and uncluttered. Given that we only had a few pages that needed to be accessible from the "main menu," we were able to get rid of the tab bar. The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
+					<p>Although that placement made it slightly more difficult to access the buttons, we felt comfortable with it as they were not intended to be accessed often. On the other hand, we wanted to encourage all users to contribute, so the button for adding a new post was placed near the bottom for easy access.</p>
+					<p>An item we went back and forth on a lot was the range slider control on the bottom of the map and stream view pages. Initially, it seemed like it would simplify the process by allowing users to just choose a distance from their current location within which to explore. Yet, that would require the app to lock the user's to their current location. Also, the screen is rectangular, so it would be unclear what the distance referred to. Instaed, we decided to let users move and zoom around using the familiar intuitive gesture controls.</p> 
+					<p>We included a stream view, as well, since some users might prefer a news feed, and it would also help with certain issues, such as a high concentration of map markers in a small area. Switching to the stream view would display list of the posts currently visible in the user's map view.</p>	            
+	            </div>
+	        </td>
+	    </tr>
+	    <tr>
+	        <td>
+	        	<div class="column" id="left">
+                 	<div class="mock">
+	                    <a href="imgs/oldnew.png" target="_blank">
+							<img src="imgs/oldnew.png" alt="First version" class="screen color">
+						</a>
+					</div>
+					<div class="mock">
+						<a href="imgs/newnew.png" target="_blank">
+							<img src="imgs/newnew.png" alt="Final version" class="screen">
+						</a>
+					</div>
+	            </div>
+	            <div class="column" id="right">       
+	                <h1>UX DECISIONS</h1>
+					<p>Creating a good experience for the process of adding a new post was the most difficult thing to do. The first mockup shows everything we initially thought would be included, and, even after we had decided to get rid of friends, we had too much going on.</p>
+					<p>It wasn't until we actually built and used the app that we realized how annoying it was to have to dismiss the keyboard before posting. A "Done" or "Post" button would have to be added to either the navigation bar or somewhere else above the keyboard area.</p>
+					<p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
+					<p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
+					<p>When thinking about edge cases, we realized there would be an issue with displaying posts that didn't have photos attached. Given that the intent was to share something currently happening, it seemed reasonable to require a photo. Something we're still considering is allowing multiple photos, especially for other users to add photos when they an already posted event.</p>
+					<p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like an "ephemeral app." Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>            
+	            </div>
+	        </td>
+	    </tr>
+	    <tr>
+	    	<td>
+	    		<div>
+	    			<a href="imgs/newpost.png" target="_blank">
+						<h6 class="caption">Final storyboard for the process of adding a new post (click to see full size)</h6>
+						<img src="imgs/newpost.png" alt="New post" class="full-width">
+					</a>
+	    		</div>
+	    	</td>
+	    </tr>
+	</table>
+	
 </html>
+

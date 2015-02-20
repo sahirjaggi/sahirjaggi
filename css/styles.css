@@ -1,266 +1,219 @@
-* {
-	font-size: 100%;
-	font-family: 'Lato', sans-serif;
-}
+/* 	CSS
+	Sahir Jaggi
+	January 2015
+*/
 
-body {
-	margin-top: 40px;
-	margin-right: 10%;
-	margin-left: 10%;
-}
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("http://fonts.googleapis.com/css?family=Lora:400,400italic,700italic");
 
-.header {
-	margin-bottom: 80px;
-}
-
-.content {
-}
-
-.about {
-	margin-top: 120px;
-}
-
-p {
-	font-size: 100%;
-	line-height: 180%;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	display: inline;
-	padding: 15px;
-	font-size: 80%;
-}
-
-a:link, a:visited {
-	color: #808080;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #4BC4F2;
-	text-decoration: none;
-}
-
-a:active {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-nav {
-	float: right;
-}
-
-a.current {
-	color: #000000;
-}
-
-label {
-	display: none;
-}
-
-input {
-	display: none;
-}
-
-.preview h1 {
-	font-size: 160%;
-	line-height: 20%;
-}
-
-.preview p {
-	color: #00CC66;
-	font-size: 100%;
-	line-height: 40%;
-	display: block;
-}
-
-.preview {
-	padding: 0.5% 0 0.5% 0;
-	background: #00994C;
-	color: #FFFFFF;
-	width: 100%;
-	text-indent: 2em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-button {
-	padding: 1.2% 3% 1.2% 3%;
-	font-size: 85%;
-	border-radius: 30px;
-	background: #00994C;
-	color: #FFFFFF;
-	border-width: 0;
-	margin-top: 38%;
-	margin-right: 2%;
-	float: right;
-	z-index: 9999;
-}
-
-.preview, button {
-	-webkit-transition: background-color 200ms linear;
-    -moz-transition: background-color 200ms linear;
-    -o-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-}
-
-article:hover button, article:hover .preview {
-	background-color: #174C32;
-	color: #FFFFFF;
-}
-
-.name {
-	font-size: 90%;
-}
-
-.radius {
-	background-image: url("../imgs/app_preview.png");
-	margin-left: 10%;
-	margin-right: 10%;
-	height: 440px;
-	width: auto;
-	display: block;
-}
-
-.art-image {
-}
-
-.self-image {
-	width: 300px;
-	height: 300px;
-	background-image: url("../imgs/self.png");
-	background-size: cover;
-	display: block;
-	border-radius: 200px;
-	float: left;
-	margin-right: 100px;
-	margin-top: -20px;
-	margin-left: 140px;
-}
-
-.description {
-	display: block;
-	margin-left: 40px;
-	margin-right: 80px;
-}
-
-
-.right-col, #intro {
-	font-size: 100%;
-	margin-top: 100px;
-}
-
-.right-col {
-	font-size: 90%;
-	display: block;
-	margin-left: 0px;
-	margin-right: 8%;
-	margin-top: 120px;
-}
-
-#sketch-des {
-	margin-top: 135px;
-}
-
-#flow-des {
-	margin-top: 120px;
-}
-
-.picture {
-	width: 340px;
-	height: auto;
-	float: left;
-	display: block;
-	margin-left: 8%;
-	margin-right: 12%;
-	margin-bottom: 120px;
-	border: 1px solid; 
-	border-color: #D3D3D3;
-	box-shadow: 10px 10px 5px #888888;
-}
-
-.gif {
-	width: auto;
-	height: 80vh;
-	float: left;
-	display: block;
-	margin-left: 13%;
-	margin-right: 15.5%;
-	margin-bottom: 110px;
-}
-
-#sketch {
-	border-right: none;
-	border-bottom: none;
-}
-
-#wire {
-	width: 330px;
-	padding: 5px;
-}
-
-.screen {
-	width: 240px;
-	height: auto;
-	float: left;
-	display: block;
-	margin-bottom: 60px;
-	margin-left: 12.5%;
-	margin-right: 17%;
-	border: 1px solid;
-	border-color: #D3D3D3;
-	box-shadow: 10px 10px 5px #888888;
-}
-
-.caption {
-	margin-top: 60px;
-	margin-bottom: 10px;
-	font-size: 85%;
-	text-align: center;
-}
-.full-width {
-	width: 84%;
-	height: auto;
-	margin-left: 8%;
-	margin-right: 8%;
-	border: 1px solid; 
-	border-color: #D3D3D3;
-	box-shadow: 10px 10px 5px #888888;
-}
-
-.sections {
-	margin-bottom: 80px;
-}
-
-
-/*
-@media screen and (max-width : 926px) {
-
-	.about {
-		margin-top: 0px;
+/* Links
+------------------------------------------------------------ */
+	a:link, a:visited {
+		color: #808080;
+		text-decoration: none;
 	}
 
-	.self-image {
-		float: none;
+	a:hover {
+		color: #4BC4F2;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	a.current {
+		color: #000000;
+	}
+
+/* Typography
+------------------------------------------------------------ */
+	* {
+		font-size: 100%;
+		font-family: 'Lato', sans-serif;
+		text-align: left;
+		line-height: 180%;
+	}
+
+	.caption {
+		margin-bottom: 10px;
+		font-size: 80%;
+		text-align: center;
+	}
+
+	#name {
+		font-size: 90%;
+	}
+
+	.preview h1 {
+		font-size: 160%;
+		line-height: 20%;
+	}
+
+	.preview p {
+		color: #00CC66;
+		font-size: 100%;
+		line-height: 40%;
 		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: 40px;
-	}
-	
-	.description {
-		margin-left: auto;
-    	margin-right: auto
 	}
 
-}
+/* Basic styles
+------------------------------------------------------------ */
+	.header {
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+	body {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.projects {
+		margin-top: 5%;
+	}
+
+/* Nav
+------------------------------------------------------------ */
+	nav {
+		float: right;
+	}
+
+	nav label {
+		display: none;
+	}
+
+	nav input {
+		display: none;
+	}
+
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline;
+		padding: 15px;
+		font-size: 80%;
+	}
+
+/* Table
+------------------------------------------------------------ */
+	table#content {
+	    width: 760px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	td {
+		padding-top: 18vh;
+	}
+
+	div#left {
+	    width: 340px;
+	    float: left;
+	}
+
+	div#right {
+	    display: block;
+	    width: 340px;
+	    float: right;
+	    font-size: 90%;
+	}
+
+/* Images
+------------------------------------------------------------ */
+	.self-image {
+		width: 300px;
+		height: 300px;
+		background-image: url("../imgs/self.png");
+		background-size: cover;
+		border-radius: 200px;
+	}
+
+	img.picture {
+		width: 340px;
+		height: auto;
+		border: 1px solid;
+		border-color: #D3D3D3;
+		box-shadow: 10px 10px 5px #888888;
+	}
+
+	div.mock {
+		padding: 40px;
+	}
+
+	img.screen {
+		width: 240px;
+		height: auto;
+		display: block;
+		border: 1px solid;
+		border-color: #D3D3D3;
+		box-shadow: 10px 10px 5px #888888;
+	}
+
+	img.color {
+		border-right: none;
+		border-bottom: none;
+	}
+
+	img.full-width {
+		width: 100%;
+		height: auto;
+		border: 1px solid; 
+		border-color: #D3D3D3;
+		box-shadow: 10px 10px 5px #888888;
+	}
+
+	div#rad-img {
+		background-image: url("../imgs/app_preview.png");
+		height: 440px;
+		width: 60%;
+		display: block;
+	}
+
+
+/* Project Preview
+------------------------------------------------------------ */
+	.preview div {
+		width: 100%;
+		text-indent: 2em;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.1% 0 0.5% 0;
+	}
+
+	button {
+		padding: 1.2% 3% 1.2% 3%;
+		font-size: 85%;
+		border-radius: 30px;
+		border-width: 0;
+		margin-top: 38%;
+		margin-right: 2%;
+		float: right;
+		z-index: 9999;
+	}
+
+	.preview div, button {
+		-webkit-transition: background-color 200ms linear;
+	    -moz-transition: background-color 200ms linear;
+	    -o-transition: background-color 200ms linear;
+	    -ms-transition: background-color 200ms linear;
+	    transition: background-color 200ms linear;
+	}
+
+	#radius {
+		background: #00994C;
+		color: #FFFFFF;
+	}
+
+	div:hover #radius {
+		background-color: #174C32;
+		color: #FFFFFF;
+	}
 
 
 @media screen and (max-width : 768px){
@@ -270,8 +223,6 @@ article:hover button, article:hover .preview {
 	}
 
 	body {
-		margin-right: 10%;
-		margin-left: 10%;
 		margin-top: 20px; 
 	}
 
@@ -347,5 +298,25 @@ article:hover button, article:hover .preview {
 	.header {
 		margin-bottom: 0px;
 	}
+
+	.header h1 {
+    	text-align: center;
+    }
+
+    .header nav {
+    	text-align: center;
+    }
+
+    .column{    
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    table#content {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
