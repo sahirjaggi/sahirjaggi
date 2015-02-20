@@ -4,4 +4,3 @@ $(document).ready(function() {
         $(this).toggleClass('hover_effect');
     });
 });
-

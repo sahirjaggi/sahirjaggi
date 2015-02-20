@@ -36,33 +36,38 @@
 		line-height: 180%;
 	}
 
-	.caption {
+	h6.caption {
 		margin-bottom: 10px;
 		font-size: 80%;
 		text-align: center;
 	}
 
-	#name {
+	h1#name {
 		font-size: 90%;
 	}
 
 	.preview h1 {
 		font-size: 160%;
-		line-height: 20%;
+		line-height: 50%;
 	}
 
 	.preview p {
 		color: #00CC66;
-		font-size: 100%;
-		line-height: 40%;
+		font-size: 90%;
+		line-height: 50%;
 		display: block;
+	}
+
+	.about p {
+		font-size: 105%;
 	}
 
 /* Basic styles
 ------------------------------------------------------------ */
-	.header {
+	#header {
 		margin-right: 10%;
 		margin-left: 10%;
+		margin-bottom: 80px;
 	}
 
 	body {
@@ -71,7 +76,7 @@
 	}
 
 	.projects {
-		margin-top: 5%;
+		margin-top: 40px;
 	}
 
 /* Nav
@@ -100,7 +105,7 @@
 		font-size: 80%;
 	}
 
-/* Table
+/* Tables
 ------------------------------------------------------------ */
 	table#content {
 	    width: 760px;
@@ -109,7 +114,7 @@
 	}
 
 	td {
-		padding-top: 18vh;
+		padding-bottom: 18vh;
 	}
 
 	div#left {
@@ -127,8 +132,8 @@
 /* Images
 ------------------------------------------------------------ */
 	.self-image {
-		width: 300px;
-		height: 300px;
+		width: 340px;
+		height: 340px;
 		background-image: url("../imgs/self.png");
 		background-size: cover;
 		border-radius: 200px;
@@ -168,41 +173,37 @@
 		box-shadow: 10px 10px 5px #888888;
 	}
 
-	div#rad-img {
-		background-image: url("../imgs/app_preview.png");
-		height: 440px;
-		width: 60%;
-		display: block;
+	.preview img {
+		width: 100%;
+		height: auto;
 	}
 
-
-/* Project Preview
+/* Projects
 ------------------------------------------------------------ */
-	.preview div {
-		width: 100%;
-		text-indent: 2em;
+	div.preview {
+		position:relative;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 0.1% 0 0.5% 0;
+		width: 64%;
+	}
+
+	div.overlay {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-indent: 1em;
 	}
 
 	button {
-		padding: 1.2% 3% 1.2% 3%;
-		font-size: 85%;
+		padding: 0.5% 2% 0.5% 2%;
+		font-size: 80%;
 		border-radius: 30px;
 		border-width: 0;
-		margin-top: 38%;
-		margin-right: 2%;
-		float: right;
+		border-color: #FFFFFF;
+		position: absolute;
+		right: 10px;
+		bottom: 20px;
 		z-index: 9999;
-	}
-
-	.preview div, button {
-		-webkit-transition: background-color 200ms linear;
-	    -moz-transition: background-color 200ms linear;
-	    -o-transition: background-color 200ms linear;
-	    -ms-transition: background-color 200ms linear;
-	    transition: background-color 200ms linear;
 	}
 
 	#radius {
@@ -215,108 +216,113 @@
 		color: #FFFFFF;
 	}
 
-
-@media screen and (max-width : 768px){
-
-	* {
-		text-align: center;
+/* Transitions
+------------------------------------------------------------ */
+	.texter, button {
+		-webkit-transition: background-color 200ms linear;
+	    -moz-transition: background-color 200ms linear;
+	    -o-transition: background-color 200ms linear;
+	    -ms-transition: background-color 200ms linear;
+	    transition: background-color 200ms linear;
 	}
 
-	body {
-		margin-top: 20px; 
-	}
 
-	h1 {
-		margin-top: 20px;
-	}
+@media screen and (max-width : 768px) {
+	
+	/* Typography
+	------------------------------------------------------------ */
+		.preview h1 {
+			font-size: 100%;
+			line-height: 20%;
+			margin-top: 15px;
+		}
 
-	.preview h1 {
-		text-align: left;
-		font-size: 120%;
-	}
+		.preview p {
+			font-size: 70%;
+			line-height: 100%;
+		}
 
-	.preview p {
-		text-align: left;
-		font-size: 80%;
-	}
+		#header h1, nav {
+	    	text-align: center;
+	    }
 
-	button {
-		font-size: 70%;
-		left: 32%;
-		top: -37px;
-	}
+	    #name h1 {
+	    	font-size: 80%;
+	    }
 
-	nav {
-		float: none;
-	}
+	/* Basic styles
+	------------------------------------------------------------ */
+		#header {
+			margin-bottom: 20px;
+		}
 
-	li {
-		display: block;
-		padding: 5px;
-		margin-top: 10px;
-		text-align: center;
-	}
+		body {
+			margin-top: 20px;
+			margin-bottom: 20px; 
+		}
 
-	label {
-		display: initial;
-		cursor: pointer;
-		color: #808080;
-		text-align: center;
-	}
+		.projects {
+			margin-top: 20px; 
+		}
 
-	input {
-		display: initial;
-	}
+	/* Nav
+	------------------------------------------------------------ */
+		nav {
+			float: none;
+		}
 
-	#menu-toggle {
-		display: none;
-	}
+		nav li {
+			display: block;
+			padding: 2px;
+			text-align: center;
+		}
 
-	#menu {
-		display: none;
-	}
+		nav label {
+			display: initial;
+			cursor: pointer;
+			color: #808080;
+			text-align: center;
+		}
 
-	#menu-toggle:checked + #menu {
-		display: block;
-	}
+		nav input {
+			display: initial;
+		}
 
-	.content {
-		margin-top: 20px;
-	}
+		#menu-toggle {
+			display: none;
+		}
 
-	.about {
-		margin-top: 0px;
-	}
+		#menu {
+			display: none;
+		}
 
-	.self-image {
-		float: none;
-		margin-right: auto;
-		margin-left: auto;
-		margin-top: 20px;
-	}
+		#menu-toggle:checked + #menu {
+			display: block;
+		}
 
-	.header {
-		margin-bottom: 0px;
-	}
+	/* Table
+	------------------------------------------------------------ */
+	    table#content {
+	        width: 340px;
+	        margin-left: auto;
+	        margin-right: auto;
+	    }
 
-	.header h1 {
-    	text-align: center;
-    }
+	    .column{    
+	        float: none;
+	        width: 100%;
+	        margin-top: 10px;
+	    }
 
-    .header nav {
-    	text-align: center;
-    }
+	/* Projects
+	------------------------------------------------------------ */
+		div.preview {
+			width: 80%;
+		}
 
-    .column{    
-        float: none;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    table#content {
-        width: 340px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+		button {
+			padding: 1% 3% 1% 3%;
+			font-size: 70%;
+			bottom: 15px;
+		}
 }
