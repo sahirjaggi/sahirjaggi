@@ -218,7 +218,7 @@
 
 /* Transitions
 ------------------------------------------------------------ */
-	.texter, button {
+	.overlay, button {
 		-webkit-transition: background-color 200ms linear;
 	    -moz-transition: background-color 200ms linear;
 	    -o-transition: background-color 200ms linear;
@@ -228,7 +228,7 @@
 
 
 @media screen and (max-width : 768px) {
-	
+
 	/* Typography
 	------------------------------------------------------------ */
 		.preview h1 {
