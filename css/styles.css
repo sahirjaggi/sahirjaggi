@@ -131,12 +131,17 @@
 
 /* Images
 ------------------------------------------------------------ */
-	.self-image {
+	.self {
 		width: 340px;
 		height: 340px;
 		background-image: url("../imgs/self.png");
 		background-size: cover;
 		border-radius: 200px;
+	}
+
+	.preview img {
+		width: 100%;
+		height: auto;
 	}
 
 	img.picture {
@@ -165,7 +170,7 @@
 		border-bottom: none;
 	}
 
-	img.full-width {
+	img.fullcol {
 		width: 100%;
 		height: auto;
 		border: 1px solid; 
@@ -173,10 +178,16 @@
 		box-shadow: 10px 10px 5px #888888;
 	}
 
-	.preview img {
-		width: 100%;
+	img#flowModal {
+		width: 60vw;
 		height: auto;
 	}
+
+	img#storyModal {
+		width: 90vw;
+		height: auto;
+	}
+
 
 /* Projects
 ------------------------------------------------------------ */
@@ -224,6 +235,72 @@
 	    -o-transition: background-color 200ms linear;
 	    -ms-transition: background-color 200ms linear;
 	    transition: background-color 200ms linear;
+	}
+
+/* Modal
+------------------------------------------------------------ */
+	.modalDialog {
+	    position: fixed;
+	    font-family: Arial, Helvetica, sans-serif;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: rgba(0, 0, 0, 0.8);
+	    z-index: 99999;
+	    opacity:0;
+	    -webkit-transition: opacity 200ms ease-in;
+	    -moz-transition: opacity 200ms ease-in;
+	    transition: opacity 200ms ease-in;
+	    pointer-events: none;
+	}
+
+	.modalDialog:target {
+	    opacity:1;
+	    pointer-events: auto;
+	}
+
+	.modalDialog > div {
+	    height: auto;
+	    position: relative;
+	    vertical-align: middle;
+	    background: #fff;
+	    background: -moz-linear-gradient(#fff, #999);
+	    background: -webkit-linear-gradient(#fff, #999);
+	    background: -o-linear-gradient(#fff, #999);
+	}
+
+	.close {
+	    background: #606061;
+	    color: #FFFFFF;
+	    line-height: 25px;
+	    position: absolute;
+	    right: -12px;
+	    text-align: center;
+	    top: -10px;
+	    width: 24px;
+	    text-decoration: none;
+	    font-weight: bold;
+	    -webkit-border-radius: 12px;
+	    -moz-border-radius: 12px;
+	    border-radius: 12px;
+	    -moz-box-shadow: 1px 1px 3px #000;
+	    -webkit-box-shadow: 1px 1px 3px #000;
+	    box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover {
+	    background: #00d9ff;
+	}
+
+	#openFlow > div {
+		width: 60%;
+		margin: 5% auto;
+	}
+
+	#openStory > div {
+		width: 90%;
+		margin: 5% auto;
 	}
 
 
@@ -288,7 +365,7 @@
 			display: initial;
 		}
 
-		#menu-toggle {
+		#menuToggle {
 			display: none;
 		}
 
@@ -296,7 +373,7 @@
 			display: none;
 		}
 
-		#menu-toggle:checked + #menu {
+		#menuToggle:checked + #menu {
 			display: block;
 		}
 

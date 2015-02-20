@@ -21,8 +21,8 @@
 
 	<div id="header">
 		<nav>
-			<label for="menu-toggle" onclick="">MENU</label>  
-			<input type="checkbox" id="menu-toggle"/>  
+			<label for="menuToggle" onclick="">MENU</label>  
+			<input type="checkbox" id="menuToggle"/>  
 			<ul id="menu">
 				<li><a href="index.html">PROJECTS</a></li>
 				<li><a href="about.html">ABOUT</a></li>
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<table id="content">
+	<table id="content" id="top">
 	    <tr>
 	        <td>
 	        	<div class="column" id="left">
@@ -43,18 +43,16 @@
 						<img src="imgs/radius.gif" alt="App screens"/>
 					</a>
                </div>
-	            <div class="column" id="right">
-	                
+	            <div class="column" id="right">     
                     <h1>RADIUS</h1>
 					<p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
 					<p>My friend, <a href="https://github.com/mjp2220" target="_blank">Matt Piccolella</a>, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
 					<p>Last summer, we lived in SoHo, which allowed us to take advantage of unplanned activities and events. With our appreciation for spontaneity and surprise, though, sometimes came feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration.</p>
-					<p>From that frustration, Radius was born as a way to discover and share spontaneous and little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>
-	            
+					<p>From that frustration, Radius was born as a way to discover and share spontaneous and little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>	            
 	            </div>
 	        </td>
 	    </tr>
-	    <tr>
+	    <tr id="ideation">
 	        <td>
 	        	<div class="column" id="left">
                     <a href="imgs/sketch.png" target="_blank">	
@@ -69,13 +67,20 @@
 	            </div>
 	        </td>
 	    </tr>
-	    <tr>
+	    <tr id="userflow">
 	        <td>
 	        	<div class="column" id="left">
-                    <a href="imgs/userflow.png" target="_blank">
+	    			<a href="#openFlow">
 						<img src="imgs/userflow_cropped.png" alt="Userflow" class="picture">
+						<h6 class="caption">Userflow map (click to see full size)</h6>
 					</a>
-	            </div>
+	    		</div>
+	    		<div id="openFlow" class="modalDialog">
+			    	<div>	
+			    		<a href="#userflow" title="Close" class="close">X</a>
+			        	<img src="imgs/userflow.png" alt="Userflow" id="flowModal">
+				    </div>
+				</div>
 	            <div class="column" id="right">       
 	                <h1>USERFLOW</h1>
 					<p>Mapping out the <a href="imgs/userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to the app and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but there was little need for all of it.</p>
@@ -84,7 +89,7 @@
 	            </div>
 	        </td>
 	    </tr>
-	    <tr>
+	    <tr id="ui">
 	        <td>
 	        	<div class="column" id="left">
                     <a href="imgs/wireframe_full.png" target="_blank">
@@ -100,7 +105,7 @@
 	            </div>
 	        </td>
 	    </tr>
-	    <tr>
+	    <tr id="ux">
 	        <td>
 	        	<div class="column" id="left">
                  	<div class="mock">
@@ -125,17 +130,24 @@
 	            </div>
 	        </td>
 	    </tr>
-	    <tr>
+	    <tr id="storyboard">
 	    	<td>
 	    		<div>
-	    			<a href="imgs/newpost.png" target="_blank">
+	    			<a href="#openStory">
 						<h6 class="caption">Final storyboard for the process of adding a new post (click to see full size)</h6>
-						<img src="imgs/newpost.png" alt="New post" class="full-width">
+						<img src="imgs/newpost.png" alt="New post" class="fullcol">
 					</a>
 	    		</div>
+	    		<div id="openStory" class="modalDialog">
+			    	<div>	
+			    		<a href="#storyboard" title="Close" class="close">X</a>
+			        	<img src="imgs/newpost.png" alt="New post" id="storyModal">
+				    </div>
+				</div>    		
 	    	</td>
 	    </tr>
 	</table>
+</body>
 
 </html>
 
