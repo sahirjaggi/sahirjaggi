@@ -144,6 +144,12 @@
 		height: auto;
 	}
 
+	img.gif {
+		width: 300px;
+		height: auto;
+		padding: 20px;
+	}
+
 	img.picture {
 		width: 340px;
 		height: auto;
