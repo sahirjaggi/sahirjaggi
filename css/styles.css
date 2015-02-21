@@ -37,7 +37,8 @@
 	}
 
 	h6.caption {
-		margin-bottom: 10px;
+		margin-top: 10px;
+        margin-bottom: 10px;
 		font-size: 80%;
 		text-align: center;
 	}
@@ -75,7 +76,7 @@
 		margin-bottom: 40px;
 	}
 
-	.projects {
+	#content {
 		margin-top: 40px;
 	}
 
@@ -114,7 +115,7 @@
 	}
 
 	td {
-		padding-bottom: 18vh;
+		padding-bottom: 12vh;
 	}
 
 	div#left {
@@ -147,7 +148,7 @@
 	img.gif {
 		width: 300px;
 		height: auto;
-		padding: 20px;
+		padding: 0px 20px;
 	}
 
 	img.picture {
@@ -186,6 +187,11 @@
 
 	img#flowModal {
 		width: 60vw;
+		height: auto;
+	}
+
+    img#uiModal {
+		width: 80vw;
 		height: auto;
 	}
 
@@ -276,7 +282,7 @@
 	    background: -o-linear-gradient(#fff, #999);
 	}
 
-	.close {
+	/*.close {
 	    background: #606061;
 	    color: #FFFFFF;
 	    line-height: 25px;
@@ -295,14 +301,36 @@
 	    box-shadow: 1px 1px 3px #000;
 	}
 
+    .close:hover {
+        background: #00d9ff;
+    }*/
+
+    .close {
+	    color: #FFFFFF;
+	    line-height: 30px;
+	    position: absolute;
+	    right: -30px;
+	    text-align: center;
+	    top: -30px;
+	    width: 30px;
+	    text-decoration: none;
+        font-size: 150%;
+	    font-weight: bold;
+	}
+
 	.close:hover {
-	    background: #00d9ff;
+	    color: #00d9ff;
 	}
 
 	#openFlow > div {
 		width: 60%;
 		margin: 5% auto;
 	}
+
+    #openUI > div {
+        width: 80%;
+        margin: 5% auto;
+    }
 
 	#openStory > div {
 		width: 90%;
@@ -321,7 +349,7 @@
 		}
 
 		.preview p {
-			font-size: 70%;
+			font-size: 80%;
 			line-height: 100%;
 		}
 
@@ -336,7 +364,7 @@
 	/* Basic styles
 	------------------------------------------------------------ */
 		#header {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 
 		body {
@@ -344,11 +372,21 @@
 			margin-bottom: 20px; 
 		}
 
-		.projects {
-			margin-top: 20px; 
+		#content {
+			margin-top: 0px; 
 		}
+    
+        #projects {
+            margin-top: 20px;
+        }
 
-	/* Nav
+    /* Images
+	------------------------------------------------------------ */
+        div.mock {
+            padding: 10px 40px;
+        }
+    
+    /* Nav
 	------------------------------------------------------------ */
 		nav {
 			float: none;
@@ -390,6 +428,10 @@
 	        margin-left: auto;
 	        margin-right: auto;
 	    }
+    
+        td {
+            padding-bottom: 2vh;
+        }
 
 	    .column{    
 	        float: none;
@@ -400,7 +442,7 @@
 	/* Projects
 	------------------------------------------------------------ */
 		div.preview {
-			width: 80%;
+			width: 90%;
 		}
 
 		button {
