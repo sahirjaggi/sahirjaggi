@@ -8,446 +8,446 @@
 
 /* Links
 ------------------------------------------------------------ */
-	a:link, a:visited {
-		color: #808080;
-		text-decoration: none;
-	}
+a:link,
+a:visited {
+    color: #808080;
+    text-decoration: none;
+}
 
-	a:hover {
-		color: #4BC4F2;
-		text-decoration: none;
-	}
+a:hover {
+    color: #4BC4F2;
+    text-decoration: none;
+}
 
-	a:active {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-	a.current {
-		color: #000000;
-	}
+a.current {
+    color: #000000;
+}
 
 /* Typography
 ------------------------------------------------------------ */
-	* {
-		font-size: 100%;
-		font-family: 'Lato', sans-serif;
-		text-align: left;
-		line-height: 180%;
-	}
+* {
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    line-height: 180%;
+}
 
-	h6.caption {
-		margin-top: 10px;
-        margin-bottom: 10px;
-		font-size: 80%;
-		text-align: center;
-	}
+#content p {
+    font-size: 90%;
+}
 
-	h1#name {
-		font-size: 90%;
-	}
+h6.caption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 80%;
+    text-align: center;
+}
 
-	.preview h1 {
-		font-size: 160%;
-		line-height: 50%;
-	}
+h6.modalCap {
+    background-color: transparent;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 80%;
+    text-align: center;
+}
 
-	.preview p {
-		color: #00CC66;
-		font-size: 90%;
-		line-height: 50%;
-		display: block;
-	}
+h1#name {
+    font-size: 90%;
+}
 
-	.about p {
-		font-size: 105%;
-	}
+.preview h1 {
+    font-size: 160%;
+    line-height: 50%;
+}
+
+.preview p {
+    color: #00CC66;
+    font-size: 90%;
+    line-height: 50%;
+    display: block;
+}
 
 /* Basic styles
 ------------------------------------------------------------ */
-	#header {
-		margin-right: 10%;
-		margin-left: 10%;
-		margin-bottom: 80px;
-	}
+#header {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 80px;
+}
 
-	body {
-		margin-top: 40px;
-		margin-bottom: 40px;
-	}
+body {
+    margin-top: 40px;
+}
 
-	#content {
-		margin-top: 40px;
-	}
+#content {
+    margin-top: 40px;
+}
 
 /* Nav
 ------------------------------------------------------------ */
-	nav {
-		float: right;
-	}
+nav {
+    float: right;
+}
 
-	nav label {
-		display: none;
-	}
+nav label {
+    display: none;
+}
 
-	nav input {
-		display: none;
-	}
+nav input {
+    display: none;
+}
 
-	nav ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-	nav li {
-		display: inline;
-		padding: 15px;
-		font-size: 80%;
-	}
+nav li {
+    display: inline;
+    padding: 15px;
+    font-size: 80%;
+}
 
 /* Tables
 ------------------------------------------------------------ */
-	table#content {
-	    width: 760px;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
+table#content {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-	td {
-		padding-bottom: 12vh;
-	}
+td {
+    padding-bottom: 14vh;
+}
 
-	div#left {
-	    width: 340px;
-	    float: left;
-	}
+#exploration td, 
+#ux td {
+    padding-bottom: 0;
+}
 
-	div#right {
-	    display: block;
-	    width: 340px;
-	    float: right;
-	    font-size: 90%;
-	}
+#storyboard td {
+    padding-bottom: 18vh;   
+}
+
+div#left {
+    width: 340px;
+    float: left;
+}
+
+div#right {
+    display: block;
+    width: 340px;
+    float: right;
+}
+
+div.compare {
+    width: 100%;
+}
 
 /* Images
 ------------------------------------------------------------ */
-	.self {
-		width: 340px;
-		height: 340px;
-		background-image: url("../imgs/self.png");
-		background-size: cover;
-		border-radius: 200px;
-	}
+.self {
+    width: 340px;
+    height: 340px;
+    background-image: url("../imgs/self.png");
+    background-size: cover;
+    border-radius: 200px;
+}
 
-	.preview img {
-		width: 100%;
-		height: auto;
-	}
+.preview img {
+    width: 100%;
+    height: auto;
+}
 
-	img.gif {
-		width: 300px;
-		height: auto;
-		padding: 0px 20px;
-	}
+img.gif {
+    width: 300px;
+    height: auto;
+    padding: 0px 20px;
+}
 
-	img.picture {
-		width: 340px;
-		height: auto;
-		border: 1px solid;
-		border-color: #D3D3D3;
-		box-shadow: 10px 10px 5px #888888;
-	}
+img.picture {
+    width: 340px;
+    height: auto;
+    border: 1px solid;
+    border-color: #D3D3D3;
+    box-shadow: 10px 10px 5px #888888;
+}
 
-	div.mock {
-		padding: 40px;
-	}
+div.mock {
+    padding: 40px;
+}
 
-	img.screen {
-		width: 240px;
-		height: auto;
-		display: block;
-		border: 1px solid;
-		border-color: #D3D3D3;
-		box-shadow: 10px 10px 5px #888888;
-	}
+img.screen {
+    width: 240px;
+    height: auto;
+    display: block;
+    border: 1px solid;
+    border-color: #D3D3D3;
+    box-shadow: 10px 10px 5px #888888;
+}
 
-	img.color {
-		border-right: none;
-		border-bottom: none;
-	}
+img.color {
+    border-right: none;
+    border-bottom: none;
+}
 
-	img.fullcol {
-		width: 100%;
-		height: auto;
-		border: 1px solid; 
-		border-color: #D3D3D3;
-		box-shadow: 10px 10px 5px #888888;
-	}
+img.fullcol {
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-color: #D3D3D3;
+    box-shadow: 10px 10px 5px #888888;
+}
 
-	img#flowModal {
-		width: 60vw;
-		height: auto;
-	}
+img#flowModal {
+    width: 60vw;
+    height: auto;
+}
 
-    img#uiModal {
-		width: 80vw;
-		height: auto;
-	}
+img#uiModal {
+    width: 80vw;
+    height: auto;
+}
 
-	img#storyModal {
-		width: 90vw;
-		height: auto;
-	}
+img#storyModal {
+    width: 90vw;
+    height: auto;
+}
 
+.compare img {
+    display: inline;
+    width: 170px;
+    margin: 7px;
+    border-left: 1px solid;
+    border-color: #D3D3D3;
+    box-shadow: 7px 7px 4px #888888;
+}
 
 /* Projects
 ------------------------------------------------------------ */
-	div.preview {
-		position:relative;
-		margin-left: auto;
-		margin-right: auto;
-		width: 64%;
-	}
+div.preview {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+}
 
-	div.overlay {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		text-indent: 1em;
-	}
+div.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-indent: 1em;
+}
 
-	button {
-		padding: 0.5% 2% 0.5% 2%;
-		font-size: 80%;
-		border-radius: 30px;
-		border-width: 0;
-		border-color: #FFFFFF;
-		position: absolute;
-		right: 10px;
-		bottom: 20px;
-		z-index: 9999;
-	}
+button {
+    padding: 0.5% 2% 0.5% 2%;
+    font-size: 80%;
+    border-radius: 30px;
+    border-width: 0;
+    border-color: #FFFFFF;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 9999;
+}
 
-	#radius {
-		background: #00994C;
-		color: #FFFFFF;
-	}
+#radius {
+    background: #00994C;
+    color: #FFFFFF;
+}
 
-	div:hover #radius {
-		background-color: #174C32;
-		color: #FFFFFF;
-	}
+div:hover #radius {
+    background-color: #174C32;
+    color: #FFFFFF;
+}
 
 /* Transitions
 ------------------------------------------------------------ */
-	.overlay, button {
-		-webkit-transition: background-color 200ms linear;
-	    -moz-transition: background-color 200ms linear;
-	    -o-transition: background-color 200ms linear;
-	    -ms-transition: background-color 200ms linear;
-	    transition: background-color 200ms linear;
-	}
+.overlay,
+button {
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
 
 /* Modal
 ------------------------------------------------------------ */
-	.modalDialog {
-	    position: fixed;
-	    font-family: Arial, Helvetica, sans-serif;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	    left: 0;
-	    background: rgba(0, 0, 0, 0.8);
-	    z-index: 99999;
-	    opacity:0;
-	    -webkit-transition: opacity 200ms ease-in;
-	    -moz-transition: opacity 200ms ease-in;
-	    transition: opacity 200ms ease-in;
-	    pointer-events: none;
-	}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+}
 
-	.modalDialog:target {
-	    opacity:1;
-	    pointer-events: auto;
-	}
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-	.modalDialog > div {
-	    height: auto;
-	    position: relative;
-	    vertical-align: middle;
-	    background: #fff;
-	    background: -moz-linear-gradient(#fff, #999);
-	    background: -webkit-linear-gradient(#fff, #999);
-	    background: -o-linear-gradient(#fff, #999);
-	}
+.modalDialog > div {
+    height: auto;
+    position: relative;
+    vertical-align: middle;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
 
-	/*.close {
-	    background: #606061;
-	    color: #FFFFFF;
-	    line-height: 25px;
-	    position: absolute;
-	    right: -12px;
-	    text-align: center;
-	    top: -10px;
-	    width: 24px;
-	    text-decoration: none;
-	    font-weight: bold;
-	    -webkit-border-radius: 12px;
-	    -moz-border-radius: 12px;
-	    border-radius: 12px;
-	    -moz-box-shadow: 1px 1px 3px #000;
-	    -webkit-box-shadow: 1px 1px 3px #000;
-	    box-shadow: 1px 1px 3px #000;
-	}
+.close {
+    color: #FFFFFF;
+    line-height: 30px;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: -30px;
+    width: 30px;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+}
 
-    .close:hover {
-        background: #00d9ff;
-    }*/
+.close:hover {
+    color: #00d9ff;
+}
 
-    .close {
-	    color: #FFFFFF;
-	    line-height: 30px;
-	    position: absolute;
-	    right: -30px;
-	    text-align: center;
-	    top: -30px;
-	    width: 30px;
-	    text-decoration: none;
-        font-size: 150%;
-	    font-weight: bold;
-	}
+#openFlow > div {
+    width: 60%;
+    height: 80%;
+    margin: 5% auto;
+}
 
-	.close:hover {
-	    color: #00d9ff;
-	}
+#openUI > div {
+    width: 80%;
+    height: 70%;
+    margin: 5% auto;
+}
 
-	#openFlow > div {
-		width: 60%;
-		margin: 5% auto;
-	}
+#openStory > div {
+    background-color:  color: black;
+    width: 90%;
+    height: 80%;
+    margin: 5% auto;
+}
 
-    #openUI > div {
-        width: 80%;
-        margin: 5% auto;
-    }
-
-	#openStory > div {
-		width: 90%;
-		margin: 5% auto;
-	}
-
-
-@media screen and (max-width : 768px) {
-
-	/* Typography
-	------------------------------------------------------------ */
-		.preview h1 {
-			font-size: 100%;
-			line-height: 20%;
-			margin-top: 15px;
-		}
-
-		.preview p {
-			font-size: 80%;
-			line-height: 100%;
-		}
-
-		#header h1, nav {
-	    	text-align: center;
-	    }
-
-	    #name h1 {
-	    	font-size: 80%;
-	    }
-
-	/* Basic styles
-	------------------------------------------------------------ */
-		#header {
-			margin-bottom: 10px;
-		}
-
-		body {
-			margin-top: 20px;
-			margin-bottom: 20px; 
-		}
-
-		#content {
-			margin-top: 0px; 
-		}
+@media screen and (max-width: 768px) {
     
-        #projects {
-            margin-top: 20px;
-        }
-
+    /* Typography
+	------------------------------------------------------------ */
+    .preview h1 {
+        font-size: 100%;
+        line-height: 20%;
+        margin-top: 15px;
+    }
+    .preview p {
+        font-size: 80%;
+        line-height: 100%;
+    }
+    #header h1,
+    nav {
+        text-align: center;
+    }
+    #name h1 {
+        font-size: 80%;
+    }
+    
+    /* Basic styles
+	------------------------------------------------------------ */
+    #header {
+        margin-bottom: 10px;
+    }
+    body {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #content {
+        margin-top: 0px;
+    }
+    #projects {
+        margin-top: 20px;
+    }
+    
     /* Images
 	------------------------------------------------------------ */
-        div.mock {
-            padding: 10px 40px;
-        }
+    div.mock {
+        padding: 10px 40px;
+    }
+    
+    .compare img {
+        width: 150px;
+    }
     
     /* Nav
 	------------------------------------------------------------ */
-		nav {
-			float: none;
-		}
-
-		nav li {
-			display: block;
-			padding: 2px;
-			text-align: center;
-		}
-
-		nav label {
-			display: initial;
-			cursor: pointer;
-			color: #808080;
-			text-align: center;
-		}
-
-		nav input {
-			display: initial;
-		}
-
-		#menuToggle {
-			display: none;
-		}
-
-		#menu {
-			display: none;
-		}
-
-		#menuToggle:checked + #menu {
-			display: block;
-		}
-
-	/* Table
-	------------------------------------------------------------ */
-	    table#content {
-	        width: 340px;
-	        margin-left: auto;
-	        margin-right: auto;
-	    }
+    nav {
+        float: none;
+    }
+    nav li {
+        display: block;
+        padding: 2px;
+        text-align: center;
+    }
+    nav label {
+        display: initial;
+        cursor: pointer;
+        color: #808080;
+        text-align: center;
+    }
+    nav input {
+        display: initial;
+    }
+    #menuToggle {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #menuToggle:checked + #menu {
+        display: block;
+    }
     
-        td {
-            padding-bottom: 2vh;
-        }
-
-	    .column{    
-	        float: none;
-	        width: 100%;
-	        margin-top: 10px;
-	    }
-
-	/* Projects
+    /* Table
 	------------------------------------------------------------ */
-		div.preview {
-			width: 90%;
-		}
-
-		button {
-			padding: 1% 3% 1% 3%;
-			font-size: 70%;
-			bottom: 15px;
-		}
+    table#content {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td {
+        padding-bottom: 2vh;
+    }
+    .column {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Projects
+	------------------------------------------------------------ */
+    div.preview {
+        width: 90%;
+    }
+    button {
+        padding: 1% 3% 1% 3%;
+        font-size: 70%;
+        bottom: 15px;
+    }
 }

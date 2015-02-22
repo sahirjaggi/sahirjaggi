@@ -1,160 +1,195 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Radius — Sahir Jaggi</title>
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Radius — Sahir Jaggi</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
-	<meta name="description" content="Sahir Jaggi's portfolio site">
-	<meta name="author" content="Sahir Jaggi">
+    <meta name="description" content="Sahir Jaggi's portfolio site">
+    <meta name="author" content="Sahir Jaggi">
 
-	<meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow">
 
-	<link rel="stylesheet" href="css/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="imgs/fav.ico">
-	<link rel="shortcut icon" href="imgs/fav.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="imgs/fav.ico">
+    <link rel="shortcut icon" href="imgs/fav.ico">
 </head>
 
 <body>
 
-	<div id="header">
-		<nav>
-			<label for="menuToggle" onclick="">MENU</label>  
-			<input type="checkbox" id="menuToggle"/>  
-			<ul id="menu">
-				<li><a href="index.html">PROJECTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="files/resume.pdf" target="_blank">RESUME</a></li>
-				<li><a href="mailto:sahir.jaggi@columbia.edu">EMAIL</a></li>
-			</ul>
-		</nav>
-		<div id="name">
-			<a href="index.html" class="current"><h1>SAHIR JAGGI</h1></a>
-		</div>
-	</div>
+    <div id="header">
+        <nav>
+            <label for="menuToggle" onclick="">MENU</label>
+            <input type="checkbox" id="menuToggle" />
+            <ul id="menu">
+                <li><a href="index.html">PROJECTS</a>
+                </li>
+                <li><a href="about.html">ABOUT</a>
+                </li>
+                <li><a href="files/resume.pdf" target="_blank">RESUME</a>
+                </li>
+                <li><a href="mailto:sahir.jaggi@columbia.edu">EMAIL</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="name">
+            <a href="index.html" class="current"><h1>SAHIR JAGGI</h1></a>
+        </div>
+    </div>
 
-	<table id="content" id="top">
-	    <tr>
-	        <td>
-	        	<div class="column" id="left">
-                    <a href="imgs/radius_original.gif" target="_blank">
-						<img src="imgs/radius.gif" alt="App screens" class="gif"/>
-					</a>
-               </div>
-	            <div class="column" id="right">     
+    <table id="content" id="top">
+        <tr>
+            <td>
+                <div class="column" id="left">
+                    <img src="imgs/radius.gif" alt="App screens" class="gif"/>
+                </div>
+                <div class="column" id="right">
                     <h1>RADIUS</h1>
-					<p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
-					<p>My friend, <a href="https://github.com/mjp2220" target="_blank">Matt Piccolella</a>, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
-					<p>Last summer, we lived in SoHo, which allowed us to take advantage of unplanned activities and events. With our appreciation for spontaneity and surprise, though, sometimes came feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration.</p>
-					<p>From that frustration, Radius was born as a way to discover and share spontaneous and little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>	            
-	            </div>
-	        </td>
-	    </tr>
-	    <tr id="ideation">
-	        <td>
-	        	<div class="column" id="left">
-                    <a href="imgs/sketch.png" target="_blank">	
-						<img src="imgs/sketch.png" alt="Sketches" class="picture color"/>
-					</a>
-	            </div>
-	            <div class="column" id="right">       
-	                <h1>IDEATION</h1>
-					<p>It felt important that Radius be a map-centric app, as part of our frustration had come from an issue with news feeds. It’s likely that many of the things we imagine being posted on Radius would otherwise be posted on social networks like Facebook and Twitter, but there’s a good chance we’d never see them.</p>
-					<p>The average Facebook user has more than 300 friends, and the average Twitter user follows more than 100 others. It’s often difficult to cut through the noise, this almost inevitably results in me scrolling past things I wish I hadn’t.</p>
-					<p>In addition, Facebook and Twitter offer the ability to share locations, but only in terms of a city or certain establishment. Using markers on a map would allow us to show exact locations, as well as transfer users to a maps app for directions.</p>	            
-	            </div>
-	        </td>
-	    </tr>
-	    <tr id="userflow">
-	        <td>
-	        	<div class="column" id="left">
-	    			<a href="#openFlow">
-						<img src="imgs/userflow_cropped.png" alt="Userflow" class="picture">
-						<h6 class="caption">Userflow map (click to see full size)</h6>
-					</a>
-	    		</div>
-	    		<div id="openFlow" class="modalDialog">
-			    	<div>	
-			    		<a href="#userflow" title="Close" class="close">&#10005;</a>
-			        	<img src="imgs/userflow.png" alt="Userflow" id="flowModal">
-				    </div>
-				</div>
-	            <div class="column" id="right">       
-	                <h1>USERFLOW</h1>
-					<p>Mapping out the <a href="imgs/userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to the app and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but there was little need for all of it.</p>
-					<p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting. Otherwise, the identity of posters would ideally be irrelevant to users.</p>
-					<p>Without friends, providing full public user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important to have that visible to others.</p>    
-	            </div>
-	        </td>
-	    </tr>
-	    <tr id="ui">
-	        <td>
-	        	<div class="column" id="left">
+                    <p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
+                    <p>My friend, <a href="https://github.com/mjp2220" target="_blank">Matt Piccolella</a>, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
+                    <p>Last summer, we lived in SoHo, which allowed us to take advantage of unplanned activities and events. With our appreciation for spontaneity and surprise, though, sometimes came feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration.</p>
+                    <p>From that frustration, Radius was born as a way to discover and share spontaneous and little publicized events. (It was originally called Around, but that was an even worse name than Radius.)</p>
+                </div>
+            </td>
+        </tr>
+        <tr id="ideation">
+            <td>
+                <div class="column" id="left">
+                    <img src="imgs/sketch.png" alt="Sketches" class="picture color"/>
+                </div>
+                <div class="column" id="right">
+                    <h1>IDEATION</h1>
+                    <p>It felt important that Radius be a map-centric app, as part of our frustration had come from an issue with news feeds. It’s likely that many of the things we imagine being posted on Radius would otherwise be posted on social networks like Facebook and Twitter, but there’s a good chance we’d never see them.</p>
+                    <p>The average Facebook user has more than 300 friends, and the average Twitter user follows more than 100 others. It’s often difficult to cut through the noise, this almost inevitably results in me scrolling past things I wish I hadn’t.</p>
+                    <p>In addition, Facebook and Twitter offer the ability to share locations, but only in terms of a city or certain establishment. Using markers on a map would allow us to show exact locations, as well as transfer users to a maps app for directions.</p>
+                </div>
+            </td>
+        </tr>
+        <tr id="userflow">
+            <td>
+                <div class="column" id="left">
+                    <a href="#openFlow">
+                        <img src="imgs/userflow_cropped.png" alt="Userflow" class="picture"/>
+                        <h6 class="caption">Userflow map (click to see full size)</h6>
+                    </a>
+                </div>
+                <div id="openFlow" class="modalDialog">
+                    <div>
+                        <a href="#userflow" title="Close" class="close">&#10005;</a>
+                        <a href="#userflow">
+                            <img src="imgs/userflow.png" alt="Userflow" id="flowModal"/>
+                            <h6 class="modalCap">Mapped out userflow through for the app &nbsp; ( click to close )</h6>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="column" id="right">
+                    <h1>USERFLOW</h1>
+                    <p>Mapping out the <a href="imgs/userflow.png" target="_blank">userflow</a> allowed us to think more clearly about what functionality was essential to the app and figure out what features seemed excessive. In the early sketching, we included everything we thought would be necessary to create a new social network, but there was little need for all of it.</p>
+                    <p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting. Otherwise, the identity of posters would ideally be irrelevant to users.</p>
+                    <p>Without friends, providing full public user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important to have that visible to others.</p>
+                </div>
+            </td>
+        </tr>
+        <tr id="ui">
+            <td>
+                <div class="column" id="left">
                     <a href="#openUI">
-						<img src="imgs/wireframe.png" alt="Wireframes" class="picture" id="wire">
+                        <img src="imgs/wireframe.png" alt="Wireframes" class="picture" id="wire"/>
                         <h6 class="caption">Balsamiq UI wireframes (click to see full size)</h6>
-					</a>
-	            </div>
+                    </a>
+                </div>
                 <div id="openUI" class="modalDialog">
-			    	<div>	
-			    		<a href="#ui" title="Close" class="close">&#10005;</a>
-			        	<img src="imgs/wireframe_full.png" alt="Userflow" id="uiModal">
-				    </div>
-				</div>
-	            <div class="column" id="right">       
-	                <h1>UI DECISIONS</h1>
-					<p>After hammering out what actually needed to included in the app, we were able to put togehter wireframes that reflected a UI we felt was intuitive and uncluttered. Given that we only had a few pages that needed to be accessible from the "main menu," we were able to get rid of the tab bar. The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
-					<p>Although that placement made it slightly more difficult to access the buttons, we felt comfortable with it as they were not intended to be accessed often. On the other hand, we wanted to encourage all users to contribute, so the button for adding a new post was placed near the bottom for easy access.</p>
-					<p>An item we went back and forth on a lot was the range slider control on the bottom of the map and stream view pages. Initially, it seemed like it would simplify the process by allowing users to just choose a distance from their current location within which to explore. Yet, that would require the app to lock the user's to their current location. Also, the screen is rectangular, so it would be unclear what the distance referred to. Instaed, we decided to let users move and zoom around using the familiar intuitive gesture controls.</p> 
-					<p>We included a stream view, as well, since some users might prefer a news feed, and it would also help with certain issues, such as a high concentration of map markers in a small area. Switching to the stream view would display list of the posts currently visible in the user's map view.</p>	            
-	            </div>
-	        </td>
-	    </tr>
-	    <tr id="ux">
-	        <td>
-	        	<div class="column" id="left">
-                 	<div class="mock">
-	                    <a href="imgs/oldnew.png" target="_blank">
-							<img src="imgs/oldnew.png" alt="First version" class="screen color">
-						</a>
-					</div>
-					<div class="mock">
-						<a href="imgs/newnew.png" target="_blank">
-							<img src="imgs/newnew.png" alt="Final version" class="screen">
-						</a>
-					</div>
-	            </div>
-	            <div class="column" id="right">       
-	                <h1>UX DECISIONS</h1>
-					<p>Creating a good experience for the process of adding a new post was the most difficult thing to do. The first mockup shows everything we initially thought would be included, and, even after we had decided to get rid of friends, we had too much going on.</p>
-					<p>It wasn't until we actually built and used the app that we realized how annoying it was to have to dismiss the keyboard before posting. A "Done" or "Post" button would have to be added to either the navigation bar or somewhere else above the keyboard area.</p>
-					<p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
-					<p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
-					<p>When thinking about edge cases, we realized there would be an issue with displaying posts that didn't have photos attached. Given that the intent was to share something currently happening, it seemed reasonable to require a photo. Something we're still considering is allowing multiple photos, especially for other users to add photos when they an already posted event.</p>
-					<p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like an "ephemeral app." Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>            
-	            </div>
-	        </td>
-	    </tr>
-	    <tr id="storyboard">
-	    	<td>
-	    		<div>
-	    			<a href="#openStory">
-						<h6 class="caption">Sketch storyboard for process of adding a new post (click to see full size)</h6>
-						<img src="imgs/newpost.png" alt="New post" class="fullcol">
-					</a>
-	    		</div>
-	    		<div id="openStory" class="modalDialog">
-			    	<div>	
-			    		<a href="#storyboard" title="Close" class="close">&#10005;</a>
-			        	<img src="imgs/newpost.png" alt="New post" id="storyModal">
-				    </div>
-				</div>    		
-	    	</td>
-	    </tr>
-	</table>
+                    <div>
+                        <a href="#ui" title="Close" class="close">&#10005;</a>
+                        <a href="#ui">
+                            <img src="imgs/wireframe_full.png" alt="Userflow" id="uiModal"/>
+                            <h6 class="modalCap">Balsamiq UI wireframes of major app screens &nbsp; ( click to close )</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="column" id="right">
+                    <h1>UI DECISIONS</h1>
+                    <p>After hammering out what actually needed to included in the app, we were able to put togehter wireframes that reflected a UI we felt was intuitive and uncluttered. Given that we only had a few pages that needed to be accessible from the "main menu," we were able to get rid of the tab bar. The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
+                    <p>Although that placement made it slightly more difficult to access the buttons, we felt comfortable with it as they were not intended to be accessed often. On the other hand, we wanted to encourage all users to contribute, so the button for adding a new post was placed near the bottom for easy access.</p>
+                    <p>An item we went back and forth on a lot was the range slider control on the bottom of the map and stream view pages. Initially, it seemed like it would simplify the process by allowing users to just choose a distance from their current location within which to explore. Yet, that would require the app to lock the user's to their current location. Also, the screen is rectangular, so it would be unclear what the distance referred to. Instaed, we decided to let users move and zoom around using the familiar intuitive gesture controls.</p>
+                    <p>We included a stream view, as well, since some users might prefer a news feed, and it would also help with certain issues, such as a high concentration of map markers in a small area. Switching to the stream view would display list of the posts currently visible in the user's map view.</p>
+                </div>
+            </td>
+        </tr>
+        <tr id="ux">
+            <td>
+                <div class="column" id="left">
+                    <div class="mock">
+                        <img src="imgs/oldnew.png" alt="First version" class="screen color"/>
+                    </div>
+                    <div class="mock">
+                        <img src="imgs/newnew.png" alt="Final version" class="screen"/>
+                    </div>
+                </div>
+                <div class="column" id="right">
+                    <h1>UX DECISIONS</h1>
+                    <p>Creating a good experience for the process of adding a new post was the most difficult thing to do. The first mockup shows everything we initially thought would be included, and, even after we had decided to get rid of friends, we had too much going on.</p>
+                    <p>It wasn't until we actually built and used the app that we realized how annoying it was to have to dismiss the keyboard before posting. A "Done" or "Post" button would have to be added to either the navigation bar or somewhere else above the keyboard area.</p>
+                    <p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
+                    <p>We also thought sharing on other social networks needed to be emphasized early on, but it wasn't necessary to have the buttons so prominent. When a user added a post, they would be taken to the post page, where they could easily choose to share.</p>
+                    <p>When thinking about edge cases, we realized there would be an issue with displaying posts that didn't have photos attached. Given that the intent was to share something currently happening, it seemed reasonable to require a photo. Something we're still considering is allowing multiple photos, especially for other users to add photos when they an already posted event.</p>
+                    <p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like an "ephemeral app." Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>
+                </div>
+            </td>
+        </tr>
+        <tr id="storyboard">
+            <td>
+                <div>
+                    <a href="#openStory">
+                        <h6 class="caption">Sketch storyboard for process of adding a new post (click to see full size)</h6>
+                        <img src="imgs/newpost.png" alt="New post" class="fullcol"/>
+                    </a>
+                </div>
+                <div id="openStory" class="modalDialog">
+                    <div>
+                        <a href="#storyboard" title="Close" class="close">&#10005;</a>
+                        <a href="#storyboard">
+                            <img src="imgs/newpost.png" alt="New post" id="storyModal"/>
+                            <h6 class="modalCap">Sketch storyboard for the process of adding a new post &nbsp; ( click to close )</h6>
+                        </a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr id="exploration">
+            <td>
+                <div class="column" id="left">
+                    <img src="imgs/mockCity.png" alt="mock city" class="picture"/>
+                </div>
+                <div class="column" id="right">
+                    <h1>EXPLORATION & ITERATION</h1>
+                    <p>For nearly every screen in the app, we created mocks with different color arrangements and styles before selecting that which felt most natural. Here you can see some of the decisions we made as tried to maintain consistency throughout the app.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Early on we had much more green throughout the app, but we decided it would be easier to read with white in general. The green is used only for highlights and the navigation bars of the three main pages (map, stream, & profile).</p>
+                <div class="compare">
+                    <img src="imgs/preview_green.png" alt=""/>
+                    <img src="imgs/preview.png" alt=""/>
+                    <img src="imgs/postDetail_green.png" alt=""/>
+                    <img src="imgs/postDetail_vote.png" alt=""/>
+                </div>
+                <p>Both for the map preview and the stream view, we thought about showing the attached pictures. We decided against it, as scroll/search velocity would be compromised, and we expect users to click through based on the text descriptions.</p>
+                <div class="compare">
+                    <img src="imgs/preview_pic.png" alt=""/>
+                    <img src="imgs/preview.png" alt=""/>
+                    <img src="imgs/stream_pics.png" alt=""/>
+                    <img src="imgs/stream.png" alt=""/>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
-
