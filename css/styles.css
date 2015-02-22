@@ -5,9 +5,9 @@
 
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
 @import url("http://fonts.googleapis.com/css?family=Lora:400,400italic,700italic");
-
 /* Links
 ------------------------------------------------------------ */
+
 a:link,
 a:visited {
     color: #808080;
@@ -27,9 +27,9 @@ a:active {
 a.current {
     color: #000000;
 }
-
 /* Typography
 ------------------------------------------------------------ */
+
 * {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
@@ -62,7 +62,7 @@ h1#name {
 }
 
 .preview h1 {
-    font-size: 160%;
+    font-size: 130%;
     line-height: 50%;
 }
 
@@ -72,9 +72,9 @@ h1#name {
     line-height: 50%;
     display: block;
 }
-
 /* Basic styles
 ------------------------------------------------------------ */
+
 #header {
     margin-right: 10%;
     margin-left: 10%;
@@ -88,9 +88,9 @@ body {
 #content {
     margin-top: 40px;
 }
-
 /* Nav
 ------------------------------------------------------------ */
+
 nav {
     float: right;
 }
@@ -114,9 +114,9 @@ nav li {
     padding: 15px;
     font-size: 80%;
 }
-
 /* Tables
 ------------------------------------------------------------ */
+
 table#content {
     width: 760px;
     margin-left: auto;
@@ -127,13 +127,13 @@ td {
     padding-bottom: 14vh;
 }
 
-#exploration td, 
+#exploration td,
 #ux td {
     padding-bottom: 0;
 }
 
 #storyboard td {
-    padding-bottom: 18vh;   
+    padding-bottom: 18vh;
 }
 
 div#left {
@@ -150,9 +150,9 @@ div#right {
 div.compare {
     width: 100%;
 }
-
 /* Images
 ------------------------------------------------------------ */
+
 .self {
     width: 340px;
     height: 340px;
@@ -229,58 +229,74 @@ img#storyModal {
     border-color: #D3D3D3;
     box-shadow: 7px 7px 4px #888888;
 }
-
-/* Projects
+/* Project List
 ------------------------------------------------------------ */
-div.preview {
-    position: relative;
-    margin-left: auto;
+
+ul.preview {
+    list-style-type: none;
+    padding-left:0;
     margin-right: auto;
-    width: 64%;
+    margin-left: auto;
+    width: 80%;
 }
 
-div.overlay {
-    position: absolute;
-    top: 0;
+ul.preview li {
+    position: relative;
+    width: inherit;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+span.text {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     width: 100%;
+    height: 12vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+span.text {
+    display: table-cell;
+    vertical-align: middle;
     text-indent: 1em;
+    color: #FFFFFF;
 }
 
 button {
+    background: rgba(0, 0, 0, 0.5);
     padding: 0.5% 2% 0.5% 2%;
     font-size: 80%;
+    color: #FFFFFF;
     border-radius: 30px;
     border-width: 0;
-    border-color: #FFFFFF;
     position: absolute;
     right: 10px;
     bottom: 20px;
     z-index: 9999;
+    opacity: 0.5;
 }
 
-#radius {
-    background: #00994C;
-    color: #FFFFFF;
+ul.preview li:hover span.text,
+ul.preview li:hover button {
+    opacity: 1;
 }
-
-div:hover #radius {
-    background-color: #174C32;
-    color: #FFFFFF;
-}
-
 /* Transitions
 ------------------------------------------------------------ */
-.overlay,
-button {
-    -webkit-transition: background-color 200ms linear;
-    -moz-transition: background-color 200ms linear;
-    -o-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-}
 
+span.text,
+button {
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
 /* Modal
 ------------------------------------------------------------ */
+
 .modalDialog {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
@@ -342,24 +358,18 @@ button {
 }
 
 #openStory > div {
-    background-color:  color: black;
+    background-color: color: black;
     width: 90%;
     height: 80%;
     margin: 5% auto;
 }
 
 @media screen and (max-width: 768px) {
-    
     /* Typography
 	------------------------------------------------------------ */
+    
     .preview h1 {
-        font-size: 100%;
-        line-height: 20%;
-        margin-top: 15px;
-    }
-    .preview p {
-        font-size: 80%;
-        line-height: 100%;
+        font-size: 5vw;
     }
     #header h1,
     nav {
@@ -368,9 +378,9 @@ button {
     #name h1 {
         font-size: 80%;
     }
-    
     /* Basic styles
 	------------------------------------------------------------ */
+    
     #header {
         margin-bottom: 10px;
     }
@@ -384,19 +394,18 @@ button {
     #projects {
         margin-top: 20px;
     }
-    
     /* Images
 	------------------------------------------------------------ */
+    
     div.mock {
         padding: 10px 40px;
     }
-    
     .compare img {
         width: 150px;
     }
-    
     /* Nav
 	------------------------------------------------------------ */
+    
     nav {
         float: none;
     }
@@ -423,15 +432,16 @@ button {
     #menuToggle:checked + #menu {
         display: block;
     }
-    
     /* Table
 	------------------------------------------------------------ */
+    
     table#content {
         width: 340px;
         margin-left: auto;
         margin-right: auto;
     }
-    td {
+    td,
+    #storyboard td {
         padding-bottom: 2vh;
     }
     .column {
@@ -439,15 +449,24 @@ button {
         width: 100%;
         margin-top: 10px;
     }
-    
-    /* Projects
+    /* Project List
 	------------------------------------------------------------ */
-    div.preview {
+    
+    ul.preview {
         width: 90%;
+    }
+    ul.preview li {
+        width: 100%;
     }
     button {
         padding: 1% 3% 1% 3%;
         font-size: 70%;
         bottom: 15px;
     }
-}
+    span.text p {
+        display: none;
+    }
+    span.text,
+    button {
+        opacity: 1;
+    }
