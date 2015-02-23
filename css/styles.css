@@ -347,20 +347,20 @@ button {
 
 #openFlow > div {
     width: 60%;
-    height: 80%;
+    height: 0;
     margin: 5% auto;
 }
 
 #openUI > div {
     width: 80%;
-    height: 70%;
+    height: 0;
     margin: 5% auto;
 }
 
 #openStory > div {
     background-color: color: black;
     width: 90%;
-    height: 80%;
+    height: 0;
     margin: 5% auto;
 }
 
