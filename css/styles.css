@@ -62,6 +62,7 @@ h1#name {
 }
 
 .preview h1 {
+    margin-top: 20px;
     font-size: 130%;
     line-height: 50%;
 }
@@ -74,7 +75,7 @@ h1#name {
 }
 
 #scuttlebug p {
-    color: #3693FF;
+    color: #4FA0FF;
     font-size: 90%;
     line-height: 50%;
     display: block;
@@ -471,10 +472,17 @@ button {
         font-size: 70%;
         bottom: 15px;
     }
+    span.text {
+        height: 8vh;
+    }
     span.text p {
         display: none;
     }
     span.text,
     button {
         opacity: 1;
+    }
+    #radius p,
+    #scuttlebug p {
+        display: none;
     }
