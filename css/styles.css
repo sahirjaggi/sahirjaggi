@@ -174,6 +174,12 @@ div.compare {
     height: auto;
 }
 
+.preview img.full {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #808080;
+}
+
 img.gif {
     width: 300px;
     height: auto;
@@ -256,8 +262,12 @@ ul.preview li {
     margin-bottom: 40px;
 }
 
-span.text {
-    background: rgba(0, 0, 0, 0.5);
+span.text, span.text-full {
+    display: table-cell;
+    vertical-align: middle;
+    text-indent: 1em;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     width: 100%;
     height: 12vh;
@@ -267,15 +277,15 @@ span.text {
     opacity: 0.5;
 }
 
-span.text {
-    display: table-cell;
-    vertical-align: middle;
-    text-indent: 1em;
-    color: #FFFFFF;
+span.text-full {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #808080;
+    opacity: 0;
 }
 
 button {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding: 0.5% 2% 0.5% 2%;
     font-size: 80%;
     color: #FFFFFF;
@@ -289,6 +299,7 @@ button {
 }
 
 ul.preview li:hover span.text,
+ul.preview li:hover span.text-full,
 ul.preview li:hover button {
     opacity: 1;
 }
@@ -296,6 +307,7 @@ ul.preview li:hover button {
 ------------------------------------------------------------ */
 
 span.text,
+span.text-full,
 button {
     -webkit-transition: opacity 200ms linear;
     -moz-transition: opacity 200ms linear;
