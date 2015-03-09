@@ -194,6 +194,15 @@ img.picture {
     box-shadow: 10px 10px 5px #888888;
 }
 
+#ui .preModal img {
+    width: 300px;
+    padding: 20px;
+}
+
+.preModal img:hover {
+    box-shadow: 4px 4px 2px #888888;
+}
+
 div.mock {
     padding: 40px;
 }
@@ -248,7 +257,7 @@ img#storyModal {
 
 ul.preview {
     list-style-type: none;
-    padding-left:0;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
     width: 80%;
@@ -262,7 +271,8 @@ ul.preview li {
     margin-bottom: 40px;
 }
 
-span.text, span.text-full {
+span.text,
+span.text-full {
     display: table-cell;
     vertical-align: middle;
     text-indent: 1em;
@@ -314,6 +324,14 @@ button {
     -o-transition: opacity 200ms linear;
     -ms-transition: opacity 200ms linear;
     transition: opacity 200ms linear;
+}
+
+.preModal img {
+    -webkit-transition: box-shadow 0.1s ease-in-out 0s;
+    -moz-transition: box-shadow 0.1s ease-in-out 0s;
+    -o-transition: box-shadow 0.1s ease-in-out 0s;
+    -ms-transition: box-shadow 0.1s ease-in-out 0s;
+    transition: box-shadow 0.1s ease-in-out 0s;
 }
 /* Modal
 ------------------------------------------------------------ */
