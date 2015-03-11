@@ -125,24 +125,31 @@ img.art {
     float: left;
 }
 
-.button:hover {
+.button:hover, .card-button:hover {
     background-color: #5291AD;
 }
 
-.caption {
+.cap-left {
     float: left;
     margin-left: 80px;
     margin-top: 60px;
     width: 360px;
 }
 
-.caption h2 {
+.cap-right {
+    float: right;
+    margin-right: 220px;
+    margin-top: 60px;
+    width: 360px;
+}
+
+h2 {
     font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 140%;
 }
 
-.caption h3 {
+h3 {
     font-family: Lato, sans-serif;
     font-weight: 200;
     color: darkslategrey;
@@ -179,4 +186,99 @@ img.screenshot {
 .temp:hover {
     background-color: #5291AD;
 }
+
+.card {
+    float: left;
+    margin-left: 240px;
+    width: 260px;
+    height: 400px;
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px #6A6A6A;
+}
+
+.card-img {
+    width: 260px;
+    height: 160px;
+    top: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.icon-back {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: white;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    opacity: .8;
+}
+
+.icon-img {
+    position: absolute;
+    width: 50px;
+    top: 4px;
+    left: 4px;
+    border-radius: 25px;
+    opacity: .9;
+}
+
+.channel-icon:hover .icon-back,
+.channel-icon:hover .icon-img{
+    opacity: 1;
+}
+
+.card-info {
+    width: 220px;
+    margin-left: 20px;
+}
+
+.card h4 {
+    font-size: 14px;
+    margin: 4px 0px;
+}
+
+.card p {
+    margin: 0;
+    line-height: 160%;
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.card h6 {
+    margin: 10px;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 220px;
+    height: 30px;
+    margin-left: 20px;
+    color: white;
+    background-color: #2E5160;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+}
+
+.labels {
+    float: left;
+    margin-left: 8px;
+    text-align: right;
+}
+
+.numbers {
+    float: left;
+    text-align: left;
+    margin: 0;
 }
