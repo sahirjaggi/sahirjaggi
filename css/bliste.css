@@ -3,8 +3,7 @@
 	January 2015
 */
 
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
-
+@import url("http://fonts.googleapis.com/css?family=Lato:100,200,400");
 .greenBack {
     position: relative;
     background-color: #6ABCE0;
@@ -66,14 +65,15 @@ a {
     opacity: .6;
 }
 
-.textBox h1, .textBox h3 {
+.textBox h1,
+.textBox h3 {
     color: white;
     font-family: Lato, sans-serif;
     font-weight: 100;
 }
 
 h3 {
-    line-height: 200%;   
+    line-height: 200%;
 }
 
 .textBox {
@@ -88,19 +88,19 @@ h3 {
 form {
     position: relative;
     top: 20vh;
-    display: inline;
     margin-left: 10%;
 }
 
-.field {
+.email-field {
     height: 40px;
     width: 320px;
     font-family: Lato, sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 16px;
     border-radius: 10px;
     border-width: 0;
     text-indent: 16px;
+    float: left;
 }
 
 img.art {
@@ -113,7 +113,7 @@ img.art {
 .button {
     color: white;
     background-color: #2E5160;
-    height: 44px;
+    height: 40px;
     width: 200px;
     font-family: Lato, sans-serif;
     font-weight: 100;
@@ -122,17 +122,18 @@ img.art {
     border-width: 0;
     margin-left: 20px;
     text-align: center;
+    float: left;
 }
 
 .button:hover {
-    background-color: #5291AD;  
+    background-color: #5291AD;
 }
 
 .caption {
     float: left;
     margin-left: 80px;
     margin-top: 60px;
-    width: 300px;
+    width: 360px;
 }
 
 .caption h2 {
@@ -141,16 +142,16 @@ img.art {
     line-height: 140%;
 }
 
-.caption h3  {
+.caption h3 {
     font-family: Lato, sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     color: darkslategrey;
     line-height: 200%;
 }
 
 img.screenshot {
     float: right;
-    width: 680px;
+    width: 640px;
     margin-top: 10vh;
     margin-right: 80px;
     border-color: #808080;
@@ -161,6 +162,7 @@ img.screenshot {
 .temp h3 {
     color: white;
 }
+
 .temp {
     background-color: #2E5160;
     height: 36px;
@@ -175,6 +177,6 @@ img.screenshot {
 }
 
 .temp:hover {
-    background-color: #5291AD;  
+    background-color: #5291AD;
 }
 }
