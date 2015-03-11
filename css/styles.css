@@ -131,7 +131,7 @@ table#content {
     margin-right: auto;
 }
 
-td {
+.process td {
     padding-bottom: 14vh;
 }
 
@@ -187,20 +187,24 @@ img.gif {
 }
 
 img.picture {
-    width: 340px;
+    width: 338px;
     height: auto;
     border: 1px solid;
-    border-color: #D3D3D3;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-#ui .preModal img {
-    width: 300px;
-    padding: 20px;
+    border-top: none;
+    border-color: #a2a2a2;
+    box-shadow: 0px 5px 20px #6A6A6A;
 }
 
 .preModal img:hover {
-    box-shadow: 4px 4px 2px #888888;
+    box-shadow: 0px 5px 35px #6A6A6A;
+}
+
+.preModal img.picture:hover {
+    width: 340px;
+}
+
+.preModal img.fullcol:hover {
+    width: 100%;
 }
 
 div.mock {
@@ -212,21 +216,17 @@ img.screen {
     height: auto;
     display: block;
     border: 1px solid;
-    border-color: #D3D3D3;
-    box-shadow: 10px 10px 5px #888888;
-}
-
-img.color {
-    border-right: none;
-    border-bottom: none;
+    border-top: none;
+    border-color: #a2a2a2;
+    box-shadow: 0px 5px 20px #6A6A6A;
 }
 
 img.fullcol {
-    width: 100%;
-    height: auto;
+    width: calc(100% - 4px);
     border: 1px solid;
-    border-color: #D3D3D3;
-    box-shadow: 10px 10px 5px #888888;
+    border-top: none;
+    border-color: #a2a2a2;
+    box-shadow: 0px 5px 20px #6A6A6A;
 }
 
 img#flowModal {
@@ -248,9 +248,10 @@ img#storyModal {
     display: inline;
     width: 170px;
     margin: 7px;
-    border-left: 1px solid;
-    border-color: #D3D3D3;
-    box-shadow: 7px 7px 4px #888888;
+    border: 1px solid;
+    border-top: none;
+    border-color: #a2a2a2;
+    box-shadow: 0px 5px 10px #6A6A6A;
 }
 /* Project List
 ------------------------------------------------------------ */
@@ -268,7 +269,7 @@ ul.preview li {
     width: inherit;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 span.text,
@@ -327,11 +328,11 @@ button {
 }
 
 .preModal img {
-    -webkit-transition: box-shadow 0.1s ease-in-out 0s;
-    -moz-transition: box-shadow 0.1s ease-in-out 0s;
-    -o-transition: box-shadow 0.1s ease-in-out 0s;
-    -ms-transition: box-shadow 0.1s ease-in-out 0s;
-    transition: box-shadow 0.1s ease-in-out 0s;
+    -webkit-transition: box-shadow 0.2s ease-in-out 0s, width 0.1s;
+    -moz-transition: box-shadow 0.2s ease-in-out 0s, width 0.1s;
+    -o-transition: box-shadow 0.2s ease-in-out 0s, width 0.1s;
+    -ms-transition: box-shadow 0.2s ease-in-out 0s, width 0.1s;
+    transition: box-shadow 0.2s ease-in-out 0s, width 0.1s;
 }
 /* Modal
 ------------------------------------------------------------ */
@@ -348,6 +349,8 @@ button {
     opacity: 0;
     -webkit-transition: opacity 200ms ease-in;
     -moz-transition: opacity 200ms ease-in;
+    -o-transition: opacity 200ms ease-in;
+    -ms-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in;
     pointer-events: none;
 }
@@ -363,6 +366,7 @@ button {
     vertical-align: middle;
     background: #fff;
     background: -moz-linear-gradient(#fff, #999);
+    background: -ms-linear-gradient(#fff, #999);
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
 }
