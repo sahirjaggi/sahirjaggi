@@ -3,7 +3,7 @@
 	January 2015
 */
 
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,200,400,700");
 /* Links
 ------------------------------------------------------------ */
 
@@ -490,6 +490,7 @@ button {
         float: none;
         width: 100%;
         margin-top: 10px;
+        position: relative;
     }
     /* Project List
 	------------------------------------------------------------ */
