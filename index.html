@@ -11,83 +11,199 @@
 
     <meta name="robots" content="noindex, nofollow">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/new.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" href="imgs/fav.ico">
     <link rel="shortcut icon" href="imgs/fav.ico">
-    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/new.js"></script>
+
 </head>
 
 <body>
 
     <div id="header">
-        <nav>
-            <label for="menuToggle" onclick="">MENU</label>
-            <input type="checkbox" id="menuToggle" />
-            <ul id="menu">
-                <li><a href="" class="current">PROJECTS</a>
-                </li>
-                <li><a href="files/resume.pdf" target="_blank">RESUME</a>
-                </li>
-                <li><a href="mailto:sahir.jaggi@columbia.edu">EMAIL</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="name">
-            <a href="" class="current"><h1>SAHIR JAGGI</h1></a>
+        <ul>
+            <li><a href="#scuttle">SCUTTLEBUG</a>
+            </li>
+            <li><a href="#radius">RADIUS</a>
+            </li>
+            <li><a href="#bliste">BLISTE</a>
+            </li>
+            <li><a href="#boutme">TOP</a>
+            </li>
+        </ul>
+    </div>
+    <div id="boutme">
+        <h1>SAHIR JAGGI</h1>
+        <h2>I'm an engineering student at Columbia University, interested in design and working on side projects with friends. I enjoy working on both UI and userflows, and I'm interested in both front-end development and high fidelity prototyping.
+        </h2>
+        <h2>If you'd like to work together, you can email me at <a href="mailto:sahir.jaggi@columbia.edu" target="_blank">sahir.jaggi@columbia.edu</a>!</h2>
+        <div class="self"></div>
+    </div>
+
+    <div class="screen" id="bliste">
+        <div class="description">
+            <h1>BLISTE (WIP)</h1>
+            <h2>Targeted marketing to social media and blog channels</h2>
+            <div class="line"></div>
+        </div>
+        <a href="bliste" target="_blank"><img src="imgs/bliste_imac.png" alt="Bliste in browser" class="imac" />
+        </a>
+    </div>
+
+    <div class="screen" id="radius">
+        <div class="description">
+            <h1>RADIUS</h1>
+            <h2>Don't miss out on what's going on around you</h2>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div id="main-slider-space">
+                <div class="slider-wrapper">
+                    <div id="slide0" class="main-slide">
+                        <div class="stuff">
+
+                            <img src="imgs/radius_iphone1.png" alt="Radius on iOS" class="iphone" />
+                        </div>
+                    </div>
+                    <div id="slide1" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <img src="imgs/radius.gif" alt="App screens" class="gif" />
+                            </div>
+                            <div class="right">
+                                <p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
+                                <p>My friend, <a href="https://github.com/mjp2220" target="_blank">Matt Piccolella</a>, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
+                                <p>Last summer, we lived in SoHo, which allowed us to take advantage of spontaneous activities and events. Sometimes, though, we had feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration when we missed things we could have easily been at.</p>
+                                <p>With that frustration, Radius was born as a way to discover and share spontaneous and little publicized events.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slide2" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <img src="imgs/sketch1.png" alt="Sketches" class="sketch" />
+                                <img src="imgs/sketch2.png" alt="Sketches" class="sketch" />
+                            </div>
+                            <div class="right">
+                                <p>IDEATION</p>
+                                <p>It felt important that Radius be a map-centric app, as part of our frustration had come from an issue with news feeds. It’s likely that many of the things we imagine being posted on Radius would otherwise be posted on social networks like Facebook and Twitter, but there’s a good chance we’d never see them.</p>
+                                <p>The average Facebook user has more than 300 friends, and the average Twitter user follows more than 100 others. It’s often difficult to cut through the noise, this almost inevitably results in scrolling past things you wish you hadn’t.</p>
+                                <p>Using markers on a map would allow us to show exact locations, as well as transfer users to a maps app for directions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slide3" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <a href="imgs/userflow.png" target="_blank" class="preModal">
+                                    <img src="imgs/userflow_cropped.png" alt="Userflow" class="userflow" />
+                                    <h6 class="caption">Userflow map (click for full)</h6>
+                                </a>
+                            </div>
+                            <div class="right">
+                                <p>USERFLOW</p>
+                                <p>Mapping out the userflow allowed us to think more clearly about what functionality was essential to the app and figure out what features seemed excessive.</p>
+                                <p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting.</p>
+                                <p>Without friends, providing full public user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important to have that visible to others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide4" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <a href="imgs/wireframe_full.png" target="_blank" class="preModal">
+                                    <img src="imgs/wireframe1.png" alt="Wireframes" class="wireframe" />
+                                    <img src="imgs/wireframe2.png" alt="Wireframes" class="wireframe" />
+                                    <h6 class="caption">Balsamiq wireframes (click for full)</h6>
+                                </a>
+                            </div>
+                            <div class="right">
+                                <p>UI DECISIONS</p>
+                                <p>We included a stream view, since some users might prefer a news feed style, and it would also help with high concentrations of map markers in a small area. Switching to the stream view would display list of the posts currently visible in the user's map view.</p>
+                                <p>Initially, it seemed like it would be simpler to allow users to choose a range distance from their current location using a slider control. That would require locking users to their current location, though, so we decided keep familiar map scroll and zoom gesture controls.</p>
+                                <p>The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide5" class="main-slide">
+                        <div class="stuff">
+                            <p>EXPLORATION &amp; ITERATION</p>
+                            <p>Creating mocks with different color arrangements and styles allowed us to select that which felt most natural. Here you can see some of the decisions we made as tried to maintain consistency.</p>
+                            <p>Early on we had much more green throughout the app, but we decided it would be easier to read with white in general. The green is used only for highlights and the navigation bar for the main pages, map view, stream view, and profile/settings. The add new and the post detail pages have minimal green.</p>
+                            <div class="compare">
+                                <img src="imgs/preview_green.png" alt="" class="first" />
+                                <img src="imgs/preview.png" alt="" />
+                                <img src="imgs/postDetail_green.png" alt="" />
+                                <img src="imgs/postDetail_vote.png" alt="" class="last" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide6" class="main-slide">
+                        <div class="stuff">
+                            <p>EXPLORATION &amp; ITERATION</p>
+                            <p>Both for the map preview and the stream view, we thought about showing the attached pictures in posts, even though we expect users to click through based on the text descriptions and categories.</p>
+                            <p>We decided against including images in map previews, as it would be difficult to show the images in the popups, and even a cropped image did not fit well. We also removed images from the stream view, as we felt that scroll/search velocity would be compromised unnecessarily with pictures in every post.</p>
+                            <div class="compare">
+                                <img src="imgs/preview_pic.png" alt="" class="first" />
+                                <img src="imgs/preview.png" alt="" />
+                                <img src="imgs/stream_pics.png" alt="" />
+                                <img src="imgs/stream.png" alt="" class="last" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide7" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <div class="fadein">
+                                    <img src="imgs/oldnew.png" alt="First version" class="mock" />
+                                    <img src="imgs/newnew.png" alt="Final version" class="mock" />
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p>UX DECISIONS</p>
+                                <p>Creating the process of adding a new post was the most difficult thing to do, as there was far too much going on. For example, early on we felt that sharing posts on other networks needed to be emphasized, but we decided the buttons didn't need to be so prominent, as users could easily choose to share when taken to their new post.</p>
+                                <p>The tricky part of the process remained choosing an expiration time for the post. Given the variety of posts expected, it wouldn't be appropriate to set an arbitrary universal time limit. Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide8" class="main-slide">
+                        <div class="stuff">
+                            <p>UX DECISIONS</p>
+                            <p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like an "ephemeral app." Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>
+                            <a href="imgs/newpost.png" target="_blank" class="preModal">
+                                <img src="imgs/newpost.png" alt="New post" class="full" />
+                                <h6 class="caption-full">Sketch storyboard for process of adding a new post (click to see full)</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of slider-wrapper -->
+            </div>
+            <!-- end of main-slider-space -->
+            <img id="main-slider-prev" class="slider-buttons" src="imgs/arrow_left.png" />
+            <img id="main-slider-next" class="slider-buttons" src="imgs/arrow_right.png" />
         </div>
     </div>
 
-    <ul class="preview">
-        <li id="boutme">
-            <table id="content">
-                <tr>
-                    <td>
-                        <div class="column" id="left">
-                            <div class="self"></div>
-                        </div>
-                        <div class="column" id="right">
-                            <p>Hi, my name is Sahir.</p>
-                            <p>I'm an engineering student at Columbia University, interested in design and working on side projects with friends.</p>
-                            <p>I enjoy working on both visuals and userflows, and I'm trying to get better with front-end development and high fidelity prototyping.
-                            </p>
-                            <p>I'm excited to contribute to both new and growing products. <a href="mailto:sahir.jaggi@columbia.edu">Let me know</a> if you'd like to work together!</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </li>
-        <li id="radius">
-            <a href="radius">
-                <img src="imgs/project1.png" />
-                <span class="text">
-                    <h1>RADIUS</h1>
-                    <p>Don't miss out on what's going on around you</p>
-                </span>
-                <button type="button" id="radius">Process &amp; more</button>
-            </a>
-        </li>
-        <li id="bliste">
-            <a href="bliste">
-                <img src="imgs/project3.png" class="full"/>
-                <span class="text-full">
-                    <h1>BLISTE</h1>
-                    <p>Targeted marketing to social media and blog channels</p>
-                </span>
-                <button type="button" id="radius">In Progress!</button>
-            </a>
-        </li>
-        <li id="scuttlebug">
-            <a>
-                <img src="imgs/project2.png" />
-                <span class="text">
-                    <h1>SCUTTLEBUG (coming soon)</h1>
-                    <p>Read and discuss with your friends and colleagues</p>
-                </span>
-                <button type="button" id="radius">In Progress!</button>
-            </a>
-        </li>
-    </ul>
+    <div class="screen" id="scuttle">
+        <div class="description">
+            <h1>SCUTTLEBUG (COMING SOON)</h1>
+            <h2>Read and discuss with your friends and colleagues</h2>
+            <div class="line"></div>
+        </div>
+        <img src="imgs/scuttle_iphone.png" alt="Scuttlebug on iOS" class="ios" />
+    </div>
+
+    <div id="footer">
+        <h2>Are you working on something cool? I'm always thrilled to hear about new projects, so feel free to <a href="mailto:sahir.jaggi@columbia.edu" target="_blank">shoot me an email</a>.</h2>
+        <h2>SAHIR JAGGI &middot; 2015</h2>
+    </div>
 
 </body>
 
