@@ -70,7 +70,7 @@ div.container {
 
 .slider-wrapper {
     position: relative;
-    width: 900%;
+    width: 1000%;
     height: 500px;
 }
 
@@ -294,7 +294,7 @@ h6.caption-full {
 }
 
 #radius .line {
-    background-color: #3F3F3F;   
+    background-color: #3F3F3F;
 }
 
 #header {
@@ -332,4 +332,56 @@ li {
     -o-transition: opacity 200ms linear;
     -ms-transition: opacity 200ms linear;
     transition: opacity 200ms linear;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 90%;
+    height: 0;
+    position: relative;
+    margin: 5% auto;
+}
+
+#openFlow > div {
+    width: 65%;
+    margin: 3% auto;
+}
+
+.close {
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 20px;
+    right: -20px;
+    top: -30px;
+}
+
+.close:hover {
+    color: #00d9ff;
+}
+
+.modalimg {
+    width: 100%;
+}
+
+.placehold {
+    display: none;
 }

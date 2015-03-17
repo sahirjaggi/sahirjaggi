@@ -12,6 +12,7 @@
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" href="imgs/fav.ico">
     <link rel="shortcut icon" href="imgs/fav.ico">
@@ -59,6 +60,7 @@
             <h2>Don't miss out on what's going on around you</h2>
             <div class="line"></div>
         </div>
+        <img src="imgs/radius_iphone1.png" alt="Scuttlebug on iOS" class="ios noslide" />
         <div class="container">
             <div id="main-slider-space">
                 <div class="slider-wrapper">
@@ -100,10 +102,16 @@
                     <div id="slide3" class="main-slide">
                         <div class="stuff">
                             <div class="left">
-                                <a href="imgs/userflow.png" target="_blank" class="preModal">
+                                <a href="#openFlow" class="preModal">
                                     <img src="imgs/userflow_cropped.png" alt="Userflow" class="userflow" />
                                     <h6 class="caption">Userflow map (click for full)</h6>
                                 </a>
+                                <div id="openFlow" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">&#10005;</a>
+                                        <img src="imgs/userflow.png" alt="Wireframes" class="modalimg" />
+                                    </div>
+                                </div>
                             </div>
                             <div class="right">
                                 <p>USERFLOW</p>
@@ -116,11 +124,17 @@
                     <div id="slide4" class="main-slide">
                         <div class="stuff">
                             <div class="left">
-                                <a href="imgs/wireframe_full.png" target="_blank" class="preModal">
+                                <a href="#openWire" class="preModal">
                                     <img src="imgs/wireframe1.png" alt="Wireframes" class="wireframe" />
                                     <img src="imgs/wireframe2.png" alt="Wireframes" class="wireframe" />
                                     <h6 class="caption">Balsamiq wireframes (click for full)</h6>
                                 </a>
+                                <div id="openWire" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">&#10005;</a>
+                                        <img src="imgs/wireframe_full.png" alt="Wireframes" class="modalimg" />
+                                    </div>
+                                </div>
                             </div>
                             <div class="right">
                                 <p>UI DECISIONS</p>
@@ -175,10 +189,16 @@
                         <div class="stuff">
                             <p>UX DECISIONS</p>
                             <p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like an "ephemeral app." Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>
-                            <a href="imgs/newpost.png" target="_blank" class="preModal">
+                            <a href="#openRad" class="preModal">
                                 <img src="imgs/newpost.png" alt="New post" class="full" />
                                 <h6 class="caption-full">Sketch storyboard for process of adding a new post (click to see full)</h6>
                             </a>
+                            <div id="openRad" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Close" class="close">&#10005;</a>
+                                    <img src="imgs/newpost.png" alt="New post flow" class="modalimg" />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -197,7 +217,8 @@
             <h2>Read and discuss with your friends and colleagues</h2>
             <div class="line"></div>
         </div>
-        <img src="imgs/scuttle_iphone.png" alt="Scuttlebug on iOS" class="ios" />
+        <img src="imgs/scuttle_iphone.png" alt="Scuttlebug on iOS" class="ios norm" />
+        <img src="imgs/scuttle_iphone1.png" alt="Scuttlebug on iOS" class="ios placehold" />
     </div>
 
     <div id="footer">
