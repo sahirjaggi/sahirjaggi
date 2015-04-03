@@ -133,8 +133,11 @@ li {
     margin: -5px 0 24px;
 }
 
-#radius .line {
+.line-dark {
+    width: 540px;
+    height: 1px;
     background-color: #3F3F3F;
+    margin: -5px 0 24px;
 }
 
 #bliste {
@@ -150,10 +153,6 @@ li {
 #scuttle h1,
 #scuttle h2 {
     color: #FFFFFF;
-}
-
-.placehold {
-    display: none;
 }
 
 #boutme {
@@ -264,6 +263,11 @@ li {
     display: table-cell;
     vertical-align: middle;
 }
+
+.placehold {
+    display: none;
+}
+
 /* Slider
 ------------------------------------------------------------ */
 

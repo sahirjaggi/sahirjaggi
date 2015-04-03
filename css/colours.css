@@ -9,17 +9,27 @@
 
 * {
     font-family: Lato, sans-serif;
+    font-size: 100%;
     font-weight: 100;
     color: white;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 h3 {
+    font-size: 1.2em;
     padding: 10px 0 0;
     margin: 0 auto;
 }
 
 .artist h1 {
-    letter-spacing: 30px;
+    letter-spacing: 1.2em;
+}
+
+.last {
+    letter-spacing: 0;
 }
 /* Links
 ------------------------------------------------------------ */
@@ -81,7 +91,7 @@ a:active h3 {
 
 .title {
     text-align: center;
-    margin-top: 10%;
+    margin: 10% 10px;
     display: none;
 }
 
@@ -117,8 +127,75 @@ a:active h3 {
     text-align: center;
 }
 
+.album {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    width: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+}
+
 .logo {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    h1 {
+        font-size: 1.4em;
+    }
+    .artist h1 {
+        font-size: 1.2em;
+        letter-spacing: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .color:hover .title {
+        display: none;
+    }
+    .button {
+        top: 10px;
+    }
+    .artist {
+        width: 4em;
+        bottom: none;
+        top: 60px;
+    }
+    .album {
+        display: block;
+    }
+    .artist h1 {
+        width: 4em;
+        font-size: 4em;
+        word-wrap: break-word;
+        letter-spacing: 4em;
+    }
+    .album h2 {
+        width: 3em;
+        font-size: 3em;
+        word-wrap: break-word;
+        letter-spacing: 4em;
+    }
+    .last {
+        letter-spacing: 4em;
+    }
 }
