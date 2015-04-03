@@ -1,6 +1,7 @@
 * {
     font-family: Lato, sans-serif;
-    font-weight: 400;
+    font-weight: 100;
+    font-size: 105%;
 }
 
 /* Links
@@ -22,15 +23,29 @@ a:active {
     text-decoration: none;
 }
 
+
 .title {
+    text-align: center;
     margin-top: 10%;
-    margin-left: 20%;
+    display: none;
+}
+
+.button {
+    text-align: center;
+    margin-top: 40vh;
+    display: none;
+}
+
+
+.color:hover .title,
+.color:hover .button {
+    display: block;   
 }
 
 .logo {
     position: absolute;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
 }
 
 
@@ -62,9 +77,4 @@ a:active {
 
 #blue {
     background-color: #5D9594;
-}
-
-.button {
-    margin-top: 90%;
-    margin-left: 40%;
 }
