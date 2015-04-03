@@ -18,8 +18,9 @@ $(document).ready(function () {
             sound.start();
         });
     });
-    
+
     SC.stream('/tracks/179746792', function (sound) {
+
         $('#brown').mouseenter(function (e) {
             e.preventDefault();
             sound.play();
@@ -34,7 +35,7 @@ $(document).ready(function () {
             sound.start();
         });
     });
-    
+
     SC.stream('/tracks/179746842', function (sound) {
         $('#black').mouseenter(function (e) {
             e.preventDefault();
@@ -50,7 +51,7 @@ $(document).ready(function () {
             sound.start();
         });
     });
-    
+
     SC.stream('/tracks/179746888', function (sound) {
         $('#blue').mouseenter(function (e) {
             e.preventDefault();

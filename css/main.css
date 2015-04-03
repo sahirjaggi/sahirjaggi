@@ -3,34 +3,7 @@
 	March 2015
 */
 
-@import url("http://fonts.googleapis.com/css?family=Lato:100,200,400,700");
-
-/* Links
------------------------------------------------------------- */
-
-a:link,
-a:visited {
-    color: #808080;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #4BC4F2;
-    text-decoration: none;
-}
-
-a:hover h6 {
-    color: #4BC4F2;
-}
-
-a:active {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-a.current {
-    color: #000000;
-}
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700");
 /* Typography
 ------------------------------------------------------------ */
 
@@ -61,6 +34,32 @@ h6.caption-full {
     text-align: center;
     margin: 5px 0;
     font-size: 70%;
+}
+/* Links
+------------------------------------------------------------ */
+
+a:link,
+a:visited {
+    color: #808080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4BC4F2;
+    text-decoration: none;
+}
+
+a:hover h6 {
+    color: #4BC4F2;
+}
+
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.current {
+    color: #000000;
 }
 /* Transitions
 ------------------------------------------------------------ */
