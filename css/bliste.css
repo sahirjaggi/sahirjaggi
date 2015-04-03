@@ -1,6 +1,6 @@
 /* 	CSS
 	Sahir Jaggi
-	January 2015
+	March 2015
 */
 
 @import url("http://fonts.googleapis.com/css?family=Lato:100,200,400,700");
@@ -30,14 +30,14 @@
     padding: 5vh 0;
 }
 
-.header {
+#header {
     position: relative;
     height: 36px;
     width: 100%;
     padding: 8px 0px;
 }
 
-.footer {
+#footer {
     height: 26px;
     width: 100%;
     padding: 12px 0px 0px;
@@ -71,11 +71,11 @@ a {
     letter-spacing: 2px;
 }
 
-.header .items a {
+#header .items a {
     color: white;   
 }
 
-.footer .items a {
+#footer .items a {
     color: #4B5A60;   
 }
 
@@ -111,20 +111,19 @@ h4 {
 }
 
 .greeting {
-    margin-top: 30vh;
+    margin-top: 15vw;
+    margin-left: 15%;
 }
 
 .textBox {
     position: relative;
-    width: 30%;
-    margin-left: 15%;
+    width: 400px;
 }
 
 form {
     position: relative;
     top: 2vh;
     width: 580px;
-    margin-left: 15%;
 }
 
 .email-field {
