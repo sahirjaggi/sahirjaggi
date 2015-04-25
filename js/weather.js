@@ -1,5 +1,9 @@
+SC.initialize({
+    client_id: '62151923af3f50e99c93da60cda3f99b'
+});
+
 $(document).ready(function () {
-    
+
     setTime();
     navigator.geolocation.getCurrentPosition(function (position) {
         var lat = position.coords.latitude;
@@ -18,6 +22,10 @@ $(document).ready(function () {
             $("#tempC").html(tempC);
             $("#des").html(des);
         });
+    });
+
+    SC.stream('/tracks/137976589', function (sound) {
+        sound.play();
     });
 
     function setbg(weather) {
