@@ -10,10 +10,10 @@ $(document).ready(function () {
         var lon = position.coords.longitude;
 
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&cnt=10", function (result) {
-            var main = result.weather[0].main;
-            var rise = result.sys.sunrise;
-            var set = result.sys.sunset;
-            setbg(main, rise, set);
+            weather = result.weather[0].main;
+            rise = result.sys.sunrise;
+            set = result.sys.sunset;
+            setbg();
             var city = result.name;
             var temp = result.main.temp;
             var tempF = Math.round(temp * (9 / 5) - 459.67);
@@ -30,7 +30,7 @@ $(document).ready(function () {
         sound.play();
     });
 
-    function setbg(weather, rise, set) {
+    function setbg() {
         if (weather == "Clouds" || weather == "clouds") {
             $('body').css('background-image', 'url(../imgs/drake/clouds.jpg)');
         }
@@ -43,18 +43,16 @@ $(document).ready(function () {
         if (weather == "Storm" || weather == "storm") {
             $('body').css('background-image', 'url(../imgs/drake/storm.jpg)');
         } else {
-            if (time > rise && time < set) {
-            $('body').css('background-image', 'url(../imgs/drake/clear.jpg)');
-            }
-            else {
-            $('body').css('background-image', 'url(../imgs/drake/night.jpg)');
+            if (rise < time && time < set) {
+                $('body').css('background-image', 'url(../imgs/drake/clear.jpg)');
+            } else {
+                $('body').css('background-image', 'url(../imgs/drake/night.jpg)');
             }
         }
     }
 
     function setTime() {
         var date = new Date();
-        var time = date.getTime();
         var hours = date.getHours();
         var minutes = date.getMinutes();
         var ampm = hours >= 12 ? 'pm' : 'am';
@@ -63,6 +61,7 @@ $(document).ready(function () {
         minutes = minutes < 10 ? '0' + minutes : minutes;
         var strTime = hours + ':' + minutes + ' ' + ampm;
         document.getElementById('time').innerHTML = strTime;
+        time = Math.round((date.getTime())/1000);
     }
 
 });
