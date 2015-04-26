@@ -6,12 +6,15 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700");
 /* Typography
 ------------------------------------------------------------ */
-
-h1 {
+* {
     font-family: sans-serif;
     color: #FFFFFF;
     line-height: 140%;
     margin: 0;
+}
+
+h1 {
+    font-size: 100%;
 }
 
 .textmain {
@@ -19,7 +22,7 @@ h1 {
 }
 
 .text {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .textmin {
@@ -34,12 +37,14 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover h1 {
+a:hover h2,
+a:hover img {
     opacity: 0.6;
     text-decoration: none;
 }
 
-a:active h1 {
+a:active h2,
+a:active img {
     opacity: 0.5;
     text-decoration: none;
 }
@@ -64,22 +69,23 @@ body {
 
 #weatherinfo {
     left: 30px;
-    top: 30px;
-    height: 280px;
-    width: 420px;
+    top: 20px;
+    height: 200px;
+    width: 520px;
     position: absolute;
 }
 
 #info {
     right: 30px;
-    top: 30px;
-    height: 300px;
-    width: 380px;
+    top: 20px;
+    height: 200px;
+    width: 420px;
     position: absolute;
+    text-align: right;
 }
 
 #credit {
-    right: 30px;
+    left: 30px;
     bottom: 20px;
     position: absolute;
 }
@@ -93,4 +99,9 @@ body {
     left: 0;
     right: 0;
     max-height: 80vh;
+}
+.music {
+    right: 30px;
+    bottom: 20px;
+    position: absolute;
 }
