@@ -11,7 +11,9 @@ $(document).ready(function () {
 
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&cnt=10", function (result) {
             var main = result.weather[0].main;
-            setbg(main);
+            var rise = result.sys.sunrise;
+            var set = result.sys.sunset;
+            setbg(main, rise, set);
             var city = result.name;
             var temp = result.main.temp;
             var tempF = Math.round(temp * (9 / 5) - 459.67);
@@ -28,7 +30,7 @@ $(document).ready(function () {
         sound.play();
     });
 
-    function setbg(weather) {
+    function setbg(weather, rise, set) {
         if (weather == "Clouds" || weather == "clouds") {
             $('body').css('background-image', 'url(../imgs/drake/clouds.jpg)');
         }
@@ -41,7 +43,12 @@ $(document).ready(function () {
         if (weather == "Storm" || weather == "storm") {
             $('body').css('background-image', 'url(../imgs/drake/storm.jpg)');
         } else {
+            if (time > rise && time < set) {
             $('body').css('background-image', 'url(../imgs/drake/clear.jpg)');
+            }
+            else {
+            $('body').css('background-image', 'url(../imgs/drake/night.jpg)');
+            }
         }
     }
 
