@@ -1,0 +1,385 @@
+/* 	CSS
+	Sahir Jaggi
+	March 2015
+*/
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,200,400,700");
+* {
+    font-family: Lato, sans-serif;
+    color: #4B5A60;
+}
+
+
+.preFold {
+    position: relative;
+    background-image: url(../imgs/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section {
+    position: relative;
+    margin-top: 0;
+    margin-left: -8px;
+    width: 100vw;
+    height: 90vh;
+    padding: 5vh 0;
+}
+
+#header {
+    position: relative;
+    height: 36px;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+#footer {
+    height: 26px;
+    width: 100%;
+    padding: 12px 0px 0px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.homelogo {
+    height: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .items {
+    position: relative;
+    float: right;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.footer .items {
+    position: relative;
+    float: left;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#header .items a {
+    color: white;   
+}
+
+#footer .items a {
+    color: #4B5A60;   
+}
+
+.toplink {
+    color: white;
+    margin-right: 40px;
+    float: right;
+}
+
+.bottomlink {
+    color: white;
+    margin-left: 40px;
+    float: left;
+}
+
+.homelogo:hover,
+.toplink:hover,
+.bottomlink:hover {
+    opacity: .8;
+}
+
+.textBox h1,
+.textBox h4 {
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+h4 {
+    color: #2E5160;
+    line-height: 200%;
+    letter-spacing: 2px;
+}
+
+.greeting {
+    margin-top: 15vw;
+    margin-left: 15%;
+}
+
+.textBox {
+    position: relative;
+    width: 400px;
+}
+
+form {
+    position: relative;
+    top: 2vh;
+    width: 580px;
+}
+
+.email-field {
+    height: 38px;
+    width: 360px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 2px;
+    border-width: 1px;
+    text-indent: 16px;
+    float: left;
+    margin-right: 8px;
+}
+
+.button {
+    color: white;
+    background-color: #2E5160;
+    height: 42px;
+    width: 200px;
+    font-family: Lato, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 2px;
+    border-width: 0;
+    text-align: center;
+    float: right;
+}
+
+.button:hover,
+.card-button:hover,
+.temp:hover {
+    background-color: #5291AD;
+}
+
+.button,
+.card-button,
+.temp {
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.cap-left {
+    float: left;
+    margin-right: 40px;
+    margin-top: 60px;
+    width: 360px;
+}
+
+.cap-right {
+    float: right;
+    margin-right: 40px;
+    margin-top: 60px;
+    width: 360px;
+}
+
+h1 {
+    font-weight: 100;
+    line-height: 100%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+h3 {
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.greeting h3 {
+    color: #FFFFFF;   
+}
+
+img.screenshot {
+    float: right;
+    width: 540px;
+    margin-top: 110px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: 0px 5px 20px #6A6A6A;
+}
+
+img.screenshot:hover {
+    margin-top: 90px;
+    box-shadow: 0px 10px 30px #6A6A6A;
+}
+
+img.screenshot {
+    -webkit-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    -moz-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    -o-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    -ms-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+}
+
+.card-button {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 180%;
+    color: white;
+}
+
+.temp {
+    background-color: #2E5160;
+    height: 36px;
+    width: 180px;
+    font-family: Lato, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    border-radius: 2px;
+    border-width: 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.card {
+    float: left;
+    margin-top: 90px;
+    width: 260px;
+    height: 400px;
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 10px #6A6A6A;
+}
+
+.card-img {
+    width: 260px;
+    height: 160px;
+    top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.icon-back {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: white;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    opacity: .8;
+}
+
+.icon-img {
+    position: absolute;
+    width: 50px;
+    top: 4px;
+    left: 4px;
+    border-radius: 25px;
+    opacity: .9;
+}
+
+.card:hover .icon-back,
+.card:hover .icon-img {
+    opacity: 1;
+}
+
+.icon-back,
+.icon-img {
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+
+.card:hover {
+    margin-top: 76px;
+    box-shadow: 0px 6px 20px #6A6A6A;
+}
+
+.card {
+    -webkit-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    -moz-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    -o-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    -ms-transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+    transition: box-shadow 0.2s ease-in-out 0s, margin-top 0.2s;
+}
+
+.card-info {
+    width: 220px;
+    margin-left: 20px;
+}
+
+.card h4 {
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin: 4px 0px;
+}
+
+.card p {
+    margin: 0;
+    line-height: 160%;
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.card h6 {
+    margin: 10px;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 240px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: #2E5160;
+    border-radius: 2px;
+}
+
+.labels {
+    float: left;
+    margin-left: 8px;
+    text-align: right;
+}
+
+.numbers {
+    float: left;
+    text-align: left;
+    margin: 0;
+}
+
+.logo {
+    float: left;
+    margin-left: 40px;
+    margin-top: 4px;
+}
+
+#search {}
+
+#infocard {
+    background-color: #E9E9E9;
+}
+
+.content {
+    width: 80vw;
+    margin: auto;
+}
+
+#infocard .content {
+    width: 60vw;   
+}
+
+#analytics {
+    background-color: #4B5A60;   
+}

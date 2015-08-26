@@ -1,0 +1,389 @@
+/* 	CSS
+	Sahir Jaggi
+	March 2015
+*/
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+/* Typography
+------------------------------------------------------------ */
+
+* {
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    line-height: 180%;
+    color: #3F3F3F;
+}
+
+p {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+h6.caption {
+    margin: 5px 40px;
+    font-size: 70%;
+}
+
+h6.caption-full {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 70%;
+}
+/* Links
+------------------------------------------------------------ */
+
+a:link,
+a:visited {
+    color: #808080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4BC4F2;
+    text-decoration: none;
+}
+
+a:hover h6 {
+    color: #4BC4F2;
+}
+
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.current {
+    color: #000000;
+}
+/* Transitions
+------------------------------------------------------------ */
+
+#header,
+.slider-buttons {
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+/* Header
+------------------------------------------------------------ */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: dimgray;
+    height: 44px;
+    width: 100vw;
+    font-size: 12px;
+    letter-spacing: 1px;
+    z-index: 9999;
+    opacity: .6;
+}
+
+#header:hover {
+    opacity: .9;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    float: right;
+    padding: 0 10px;
+}
+/* Footer
+------------------------------------------------------------ */
+
+#footer {
+    margin: 40px auto 40px;
+    position: relative;
+    width: 540px;
+    height: 100px;
+}
+/* Sections
+------------------------------------------------------------ */
+
+.screen {
+    position: relative;
+    margin-top: 0;
+    margin-left: -8px;
+    width: 100vw;
+    height: 90vh;
+    padding: 5vh 0;
+}
+
+.description {
+    width: 540px;
+    margin: auto;
+}
+
+.line {
+    width: 540px;
+    height: 1px;
+    background-color: white;
+    margin: -5px 0 24px;
+}
+
+.line-dark {
+    width: 540px;
+    height: 1px;
+    background-color: #3F3F3F;
+    margin: -5px 0 24px;
+}
+
+#bliste {
+    background-color: #4B5A60;
+}
+
+#scuttle {
+    background-color: #415E7F;
+}
+
+#bliste h1,
+#bliste h2,
+#scuttle h1,
+#scuttle h2 {
+    color: #FFFFFF;
+}
+
+#boutme {
+    margin: 40px auto 80px;
+    padding: 40px 0;
+    position: relative;
+    width: 540px;
+    height: 400px;
+}
+/* Images
+------------------------------------------------------------ */
+
+.self {
+    width: 220px;
+    height: 220px;
+    background-image: url("../imgs/self.png");
+    background-size: cover;
+    border-radius: 110px;
+    margin: 40px auto 20px;
+}
+
+.gif {
+    width: 220px;
+    height: auto;
+    margin: 16px auto;
+}
+
+.sketch {
+    width: 220px;
+    height: auto;
+    margin: 40px 0;
+    box-shadow: 0px 2px 5px #6A6A6A;
+}
+
+.userflow {
+    width: 220px;
+    height: auto;
+    margin: 40px 0 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.wireframe {
+    width: 220px;
+    height: auto;
+    margin: 10px 0 0;
+}
+
+.mock {
+    width: 220px;
+    margin: 20px 0;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+.fadein {
+    position: relative;
+}
+
+.fadein img {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+
+.full {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.compare img {
+    display: inline;
+    width: 120px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+.compare .first {
+    margin-left: 0;
+}
+
+.compare .last {
+    margin-right: 0;
+}
+
+.imac {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.iphone {
+    width: 540px;
+    height: auto;
+}
+
+.ios {
+    height: 400px;
+    width: auto;
+    margin: 40px auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.placehold {
+    display: none;
+}
+
+/* Slider
+------------------------------------------------------------ */
+
+div.container {
+    width: 98vw;
+    height: 480px;
+    margin: 20px auto 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#main-slider-space {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 1000%;
+    height: 500px;
+}
+
+.main-slide {
+    width: 100vw;
+    height: 494px;
+    float: left;
+}
+
+.stuff {
+    width: 540px;
+    height: 480px;
+    margin: auto;
+}
+
+div.left {
+    width: 260px;
+    float: left;
+}
+
+div.right {
+    display: block;
+    width: 280px;
+    float: right;
+}
+
+.slider-buttons {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 30%;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.slider-buttons:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#main-slider-prev {
+    left: 40px;
+    background-image: url("../imgs/arrow_left.png");
+}
+
+#main-slider-next {
+    right: 40px;
+    background-image: url("../imgs/arrow_right.png");
+}
+/* Modals
+------------------------------------------------------------ */
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 90%;
+    height: 0;
+    position: relative;
+    margin: 5% auto;
+}
+
+#openFlow > div {
+    width: 65%;
+    margin: 3% auto;
+}
+
+.modalimg {
+    width: 100%;
+}
+
+.close {
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 20px;
+    right: -20px;
+    top: -30px;
+}
+
+.close:hover {
+    color: #00d9ff;
+}

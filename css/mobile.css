@@ -1,0 +1,73 @@
+/* 	CSS
+	Sahir Jaggi
+	March 2015
+*/
+
+@media screen and (max-width: 800px) {
+    #header {
+        display: none;
+    }
+    .placehold {
+        display: inherit;
+    }
+    #main-slider-space,
+    .norm {
+        display: none;
+    }
+    .slider-buttons {
+        display: none;
+    }
+    #boutme h1 {
+        text-align: center;
+        margin: 0 0 10%;
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .screen {
+        height: 610px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 16px;
+        margin: 0;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    #boutme {
+        margin: 0 auto 5%;
+        position: relative;
+        width: 90%;
+        height: 420px;
+    }
+    .self {
+        width: 160px;
+        height: 160px;
+        border-radius: 110px;
+        margin: 10% auto;
+    }
+    .description,
+    #footer {
+        width: 90%;
+    }
+    .imac {
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+    }
+    .ios {
+        width: 90%;
+        height: auto;
+        margin: 0px auto;
+    }
+    .line {
+        width: 100%;
+    }
+    .screen {
+        height: 98vw;
+    }
+}

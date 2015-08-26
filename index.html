@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sahir Jaggi</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sahir Jaggi's portfolio site">
+    <meta name="author" content="Sahir Jaggi">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="imgs/fav.ico">
+    <link rel="shortcut icon" href="imgs/fav.ico">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <ul>
+            <li><a href="#scuttle">SCUTTLEBUG</a>
+            </li>
+            <li><a href="#radius">RADIUS</a>
+            </li>
+            <li><a href="#bliste">BLISTE</a>
+            </li>
+            <li><a href="#boutme">TOP</a>
+            </li>
+        </ul>
+    </div>
+    <div id="boutme">
+        <h1>SAHIR JAGGI</h1>
+        <h2>I'm an engineering student at Columbia University, interested in design and working on side projects with friends. I enjoy working on both UI and userflows, and I'm interested in both front-end development and high fidelity prototyping.
+        </h2>
+        <h2>If you'd like to work together, you can email me at <a href="mailto:sahir.jaggi@columbia.edu" target="_blank">sahir.jaggi@columbia.edu</a>!</h2>
+        <div class="self"></div>
+    </div>
+
+    <div class="screen" id="bliste">
+        <div class="description">
+            <h1>BLISTE (WIP)</h1>
+            <h2>Targeted marketing to social media and blog channels</h2>
+            <div class="line"></div>
+        </div>
+        <a href=""><img src="imgs/bliste_imac.png" alt="Bliste in browser" class="imac" />
+        </a>
+    </div>
+
+    <div class="screen" id="radius">
+        <div class="description">
+            <h1>RADIUS</h1>
+            <h2>Don't miss out on what's going on around you</h2>
+            <div class="line-dark"></div>
+        </div>
+        <img src="imgs/radius_iphone1.png" alt="Scuttlebug on iOS" class="ios placehold" />
+        <div class="container">
+            <div id="main-slider-space">
+                <div class="slider-wrapper">
+                    <div id="slide0" class="main-slide">
+                        <div class="stuff">
+
+                            <img src="imgs/radius_iphone1.png" alt="Radius on iOS" class="iphone" />
+                        </div>
+                    </div>
+                    <div id="slide1" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <img src="imgs/radius.gif" alt="App screens" class="gif" />
+                            </div>
+                            <div class="right">
+                                <p>Radius is an iOS app that keeps you from missing out on what’s going on around you.</p>
+                                <p>My friend, <a href="https://github.com/mjp2220" target="_blank">Matt Piccolella</a>, and I began working on this project last semester to help us learn the processes of designing and developing an app, as neither of us had any experience with creating native apps for the app store.</p>
+                                <p>Last summer, we lived in SoHo, which allowed us to take advantage of spontaneous activities and events. Sometimes, though, we had feelings of <a href="http://en.wikipedia.org/wiki/Fear_of_missing_out" target="_blank">fomo</a> and frustration when we missed things we could have easily been at.</p>
+                                <p>With that frustration, Radius was born as a way to discover and share spontaneous and little publicized events.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slide2" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <img src="imgs/radius/sketch1.png" alt="Sketches" class="sketch" />
+                                <img src="imgs/radius/sketch2.png" alt="Sketches" class="sketch" />
+                            </div>
+                            <div class="right">
+                                <p>IDEATION</p>
+                                <p>It felt important that Radius be a map-centric app, as part of our frustration had come from an issue with news feeds. It’s likely that many of the things we imagine being posted on Radius would otherwise be posted on social networks like Facebook and Twitter, but there’s a good chance we’d never see them.</p>
+                                <p>The average Facebook user has more than 300 friends, and the average Twitter user follows more than 100 others. It’s often difficult to cut through the noise, this almost inevitably results in scrolling past things you wish you hadn’t.</p>
+                                <p>Using markers on a map would allow us to show exact locations, as well as transfer users to a maps app for directions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slide3" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <a href="#openFlow" class="preModal">
+                                    <img src="imgs/radius/userflow_cropped.png" alt="Userflow" class="userflow" />
+                                    <h6 class="caption">Userflow map (click for full)</h6>
+                                </a>
+                                <div id="openFlow" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">&#10005;</a>
+                                        <img src="imgs/radius/userflow.png" alt="Wireframes" class="modalimg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p>USERFLOW</p>
+                                <p>Mapping out the userflow allowed us to think more clearly about what functionality was essential to the app and figure out what features seemed excessive.</p>
+                                <p>The first thing we cut was the ability to have friends. For our purposes, a user's profile only really served to attribute posts to someone like a user review platform, avoiding the headaches that come with anonymous posting.</p>
+                                <p>Without friends, providing full public user profiles also seemed unnecessary. We wanted to include a gamified point system, as well as offer users the ability to look through their own post history, but it didn't seem important to have that visible to others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide4" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <a href="#openWire" class="preModal">
+                                    <img src="imgs/radius/wireframe1.png" alt="Wireframes" class="wireframe" />
+                                    <img src="imgs/radius/wireframe2.png" alt="Wireframes" class="wireframe" />
+                                    <h6 class="caption">Balsamiq wireframes (click for full)</h6>
+                                </a>
+                                <div id="openWire" class="modalDialog">
+                                    <div>
+                                        <a href="#close" title="Close" class="close">&#10005;</a>
+                                        <img src="imgs/radius/wireframe_full.png" alt="Wireframes" class="modalimg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p>UI DECISIONS</p>
+                                <p>We included a stream view, since some users might prefer a news feed style, and it would also help with high concentrations of map markers in a small area. Switching to the stream view would display list of the posts currently visible in the user's map view.</p>
+                                <p>Initially, it seemed like it would be simpler to allow users to choose a range distance from their current location using a slider control. That would require locking users to their current location, though, so we decided keep familiar map scroll and zoom gesture controls.</p>
+                                <p>The icons for accessing the stream view and the profile/settings page were moved to the navigation bar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide5" class="main-slide">
+                        <div class="stuff">
+                            <p>EXPLORATION &amp; ITERATION</p>
+                            <p>Creating mocks with different color arrangements and styles allowed us to select that which felt most natural.</p>
+                            <p>Early on we had much more green throughout the app, but we decided it would be easier to read with white in general. The green is used only for highlights and the navigation bar for the main pages, map view, stream view, and profile/settings. The add new and the post detail pages have minimal green.</p>
+                            <div class="compare">
+                                <img src="imgs/radius/preview_green.png" alt="" class="first" />
+                                <img src="imgs/radius/preview.png" alt="" />
+                                <img src="imgs/radius/postDetail_green.png" alt="" />
+                                <img src="imgs/radius/postDetail_vote.png" alt="" class="last" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide6" class="main-slide">
+                        <div class="stuff">
+                            <p>EXPLORATION &amp; ITERATION</p>
+                            <p>Both for the map preview and the stream view, we thought about showing the attached pictures in posts, even though we expect users to click through based on the descriptions.</p>
+                            <p>We decided against including images in map previews, as it would be difficult to show the images in the popups, and even a cropped image did not fit well. We also removed images from the stream view, as we felt that scroll/search velocity would be compromised unnecessarily with pictures in every post.</p>
+                            <div class="compare">
+                                <img src="imgs/radius/preview_pic.png" alt="" class="first" />
+                                <img src="imgs/radius/preview.png" alt="" />
+                                <img src="imgs/radius/stream_pics.png" alt="" />
+                                <img src="imgs/radius/stream.png" alt="" class="last" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide7" class="main-slide">
+                        <div class="stuff">
+                            <div class="left">
+                                <div class="fadein">
+                                    <img src="imgs/radius/oldnew.png" alt="First version" class="mock" />
+                                    <img src="imgs/radius/newnew.png" alt="Final version" class="mock" />
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p>UX DECISIONS</p>
+                                <p>Creating the process of adding a new post was the most difficult thing to do, as there was far too much going on. For example, early on we felt that sharing posts on other networks needed to be emphasized, but we decided the buttons didn't need to be so prominent, as users could easily choose to share when taken to their new post.</p>
+                                <p>The tricky part of the process remained choosing an expiration time for the post. Given the variety of posts expected, it wouldn't be appropriate to set an arbitrary universal time limit. Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide8" class="main-slide">
+                        <div class="stuff">
+                            <p>UX DECISIONS</p>
+                            <p>The tricky part of the process remains choosing an expiration time for the post. Given the variety of posts we expect, ranging from all-day sales to street performances, it wouldn't be appropriate to set an arbitrary time limit like an "ephemeral app." Our solution was to ask the user to categorize their post (which also helps with filtering) and autogenerate a time which can be adjusted if necessary.</p>
+                            <a href="#openRad" class="preModal">
+                                <img src="imgs/radius/newpost.png" alt="New post" class="full" />
+                                <h6 class="caption-full">Sketch storyboard for process of adding a new post (click to see full)</h6>
+                            </a>
+                            <div id="openRad" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Close" class="close">&#10005;</a>
+                                    <img src="imgs/radius/newpost.png" alt="New post flow" class="modalimg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of slider-wrapper -->
+            </div>
+            <!-- end of main-slider-space -->
+            <img id="main-slider-prev" class="slider-buttons" src="imgs/arrow_left.png" />
+            <img id="main-slider-next" class="slider-buttons" src="imgs/arrow_right.png" />
+        </div>
+    </div>
+
+    <div class="screen" id="scuttle">
+        <div class="description">
+            <h1>SCUTTLEBUG (COMING SOON)</h1>
+            <h2>Read and discuss with your friends and colleagues</h2>
+            <div class="line"></div>
+        </div>
+        <img src="imgs/scuttle_iphone.png" alt="Scuttlebug on iOS" class="ios norm" />
+        <img src="imgs/scuttle_iphone1.png" alt="Scuttlebug on iOS" class="ios placehold" />
+    </div>
+
+    <div id="footer">
+        <h1>OTHER PROJECTS</h1>
+        <br>
+        <div class="line-dark"></div>
+
+        <h2><i><a href="/colours.html" target="_blank">COLOURS</a></i> is a SoundCloud-powered tribute to artist PARTYNEXTDOOR and his 4 track EP titled PNDCOLOURS.</h2>
+        <h2><i><a href="/weather.html" target="_blank">DRIZZLE</a></i> is a OpenWeatherMap-powered tribute to artist Drake and his album titled Nothing Was the Same.</h2>
+        <br>
+        <div class="line-dark"></div>
+
+        <h2>Are you working on something cool? I'm always thrilled to hear about new projects, so feel free to <a href="mailto:sahir.jaggi@columbia.edu" target="_blank">shoot me an email</a>.</h2>
+        <h2>SAHIR JAGGI &middot; 2015</h2>
+    </div>
+
+</body>
+
+</html>
