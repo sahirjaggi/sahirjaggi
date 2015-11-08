@@ -44,14 +44,22 @@ function modal() {
 }
 
 function alternate() {
-    $('.fadein img:gt(0)').hide();
+    $('.alternate img:gt(0)').hide();
     setInterval(function () {
-        $('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');
+        $('.alternate :first-child').fadeOut().next('img').fadeIn().end().appendTo('.alternate');
     }, 1000);
+}
+
+function gifSwitch() {
+    $('.switch img:gt(0)').hide();
+    setInterval(function () {
+        $('.switch :first-child').hide().next('img').show().end().appendTo('.switch');
+    }, 2000);
 }
 
 $(document).ready(function () {
     slider();
     modal();
     alternate();
+    gifSwitch();
 });
