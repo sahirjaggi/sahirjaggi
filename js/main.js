@@ -1,4 +1,4 @@
-$(document).ready(function () {
+function slider() {
     var slides = $('.main-slide');
     var i = 0;
     $('#main-slider-prev').hide();
@@ -26,7 +26,9 @@ $(document).ready(function () {
             'left': -(slides.eq(i).position().left)
         }, 600, "swing");
     });
-    
+}
+
+function modal() {
     $('a[href*=#]:not([href^=#open], [href^=#close])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -39,9 +41,17 @@ $(document).ready(function () {
             }
         }
     });
-    
+}
+
+function alternate() {
     $('.fadein img:gt(0)').hide();
     setInterval(function () {
         $('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');
-    }, 2000);
+    }, 1000);
+}
+
+$(document).ready(function () {
+    slider();
+    modal();
+    alternate();
 });

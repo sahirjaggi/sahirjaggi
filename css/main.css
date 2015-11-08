@@ -1,28 +1,21 @@
 /* 	CSS
 	Sahir Jaggi
-	March 2015
+	November 2015
 */
-
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700");
 /* Typography
 ------------------------------------------------------------ */
 
 * {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     text-align: left;
     line-height: 180%;
-    color: #3F3F3F;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 p {
-    font-size: 14px;
-}
-
-h1 {
-    font-size: 18px;
-    margin: 20px 0 0;
+    font-size: 15px;
 }
 
 h6.caption {
@@ -35,31 +28,60 @@ h6.caption-full {
     margin: 5px 0;
     font-size: 70%;
 }
+
+.bold {
+    font-weight: 400;
+}
 /* Links
 ------------------------------------------------------------ */
 
 a:link,
-a:visited {
-    color: #808080;
+a:visited,
+.light a:link,
+.light a:visited {
+    color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
 
-a:hover {
+a:hover,
+a:active,
+.light a:hover,
+.light a:active {
     color: #4BC4F2;
+    border-bottom-color: #4BC4F2;
+}
+
+.dark a:link,
+.dark a:visited {
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);}
+
+.dark a:hover,
+.dark a:active {
+    color: rgba(255, 255, 255, 1);
 }
 
 a:hover h6 {
     color: #4BC4F2;
 }
 
-a:active {
-    color: #FFFFFF;
-    text-decoration: none;
+a.preModal,
+a.close {
+  border-bottom: none;
 }
 
-a.current {
-    color: #000000;
+a.close:link,
+a.close:visited {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a.close:hover,
+a.close:active {
+    color: #4BC4F2;
 }
 /* Transitions
 ------------------------------------------------------------ */
@@ -107,12 +129,24 @@ li {
     margin: 40px auto 40px;
     position: relative;
     width: 540px;
-    height: 100px;
 }
+
+footer {
+  margin-top: 72px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  height: 120px;
+  line-height: 120px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 /* Sections
 ------------------------------------------------------------ */
 
-.screen {
+.section {
     position: relative;
     margin-top: 0;
     margin-left: -8px;
@@ -123,36 +157,60 @@ li {
 
 .description {
     width: 540px;
-    margin: auto;
+    margin: 30px auto 0;
 }
 
-.line {
-    width: 540px;
-    height: 1px;
-    background-color: white;
-    margin: -5px 0 24px;
+.header {
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
 }
 
-.line-dark {
-    width: 540px;
-    height: 1px;
-    background-color: #3F3F3F;
-    margin: -5px 0 24px;
+.light .header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#bliste {
-    background-color: #4B5A60;
+.dark .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-#scuttle {
-    background-color: #415E7F;
+.header .title {
+    width: auto;
+    display: inline-block;
 }
 
-#bliste h1,
-#bliste h2,
-#scuttle h1,
-#scuttle h2 {
-    color: #FFFFFF;
+.header .info {
+    float: right;
+    font-style: italic;
+}
+
+.light .header .title,
+.light .content p {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.dark .header .title,
+.dark .content p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.light .header .info {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.dark .header .info {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+    margin-top: 28px;
+}
+
+.content p {
+    line-height: 24px;
+    font-size: 15px;
+    margin-top: 20px;
 }
 
 #boutme {
@@ -161,6 +219,22 @@ li {
     position: relative;
     width: 540px;
     height: 400px;
+}
+
+#boomerang {
+    background-color: #2477C3;
+}
+
+#fire {
+    background-color: #000000;
+}
+
+#scuttle {}
+
+#columbia {
+    background-image: url("../imgs/columbia.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 /* Images
 ------------------------------------------------------------ */
@@ -183,28 +257,28 @@ li {
 .sketch {
     width: 220px;
     height: auto;
-    margin: 40px 0;
+    margin: 30px 0;
     box-shadow: 0px 2px 5px #6A6A6A;
 }
 
 .userflow {
     width: 220px;
     height: auto;
-    margin: 40px 0 0;
+    margin: 10px 0 0;
     border-style: solid;
     border-width: 1px;
     border-color: black;
 }
 
 .wireframe {
-    width: 220px;
+    width: 200px;
     height: auto;
     margin: 10px 0 0;
 }
 
 .mock {
-    width: 220px;
-    margin: 20px 0;
+    width: 200px;
+    margin: 0;
     height: auto;
     border-style: solid;
     border-width: 1px;
@@ -244,20 +318,20 @@ li {
 }
 
 .imac {
-    width: 500px;
+    width: 360px;
     height: auto;
-    margin: auto;
+    margin: 20px auto;
     display: table-cell;
     vertical-align: middle;
 }
 
 .iphone {
-    width: 540px;
+    width: 500px;
     height: auto;
 }
 
 .ios {
-    height: 400px;
+    height: 360px;
     width: auto;
     margin: 40px auto;
     display: table-cell;
@@ -267,16 +341,14 @@ li {
 .placehold {
     display: none;
 }
-
 /* Slider
 ------------------------------------------------------------ */
 
 div.container {
     width: 98vw;
-    height: 480px;
+    height: 500px;
     margin: 20px auto 0;
     position: absolute;
-    bottom: 0;
 }
 
 #main-slider-space {
@@ -293,7 +365,7 @@ div.container {
 
 .main-slide {
     width: 100vw;
-    height: 494px;
+    height: 496px;
     float: left;
 }
 
