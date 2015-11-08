@@ -8,7 +8,7 @@
 * {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     line-height: 180%;
     color: rgba(0, 0, 0, 0.8);
@@ -29,6 +29,15 @@ h6.caption-full {
     font-size: 70%;
 }
 
+.name {
+    font-size: 22px;
+    font-family: "Volkorn", serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #4a4a4a;
+}
+}
 .bold {
     font-weight: 400;
 }
@@ -44,7 +53,6 @@ a:visited,
     padding-bottom: 1px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
-
 a:hover,
 a:active,
 .light a:hover,
@@ -52,33 +60,28 @@ a:active,
     color: #4BC4F2;
     border-bottom-color: #4BC4F2;
 }
-
 .dark a:link,
 .dark a:visited {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);}
-
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
 .dark a:hover,
 .dark a:active {
     color: rgba(255, 255, 255, 1);
 }
-
 a:hover h6 {
     color: #4BC4F2;
 }
-
 a.preModal,
 a.close {
-  border-bottom: none;
+    border-bottom: none;
 }
-
 a.close:link,
 a.close:visited {
     color: rgba(255, 255, 255, 0.8);
 }
-
 a.close:hover,
 a.close:active {
     color: #4BC4F2;
@@ -110,11 +113,9 @@ a.close:active {
     z-index: 9999;
     opacity: .6;
 }
-
 #header:hover {
     opacity: .9;
 }
-
 li {
     list-style: none;
     display: inline;
@@ -130,19 +131,17 @@ li {
     position: relative;
     width: 540px;
 }
-
 footer {
-  margin-top: 72px;
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  height: 120px;
-  line-height: 120px;
-  letter-spacing: 1px;
-  color: rgba(0, 0, 0, 0.25);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    height: 120px;
+    line-height: 120px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 /* Sections
 ------------------------------------------------------------ */
 
@@ -154,83 +153,65 @@ footer {
     height: 90vh;
     padding: 5vh 0;
 }
-
 .description {
     width: 540px;
     margin: 30px auto 0;
 }
-
 .header {
     width: 100%;
     font-size: 13px;
     letter-spacing: 1px;
     padding-bottom: 8px;
 }
-
 .light .header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .dark .header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .header .title {
     width: auto;
     display: inline-block;
 }
-
 .header .info {
     float: right;
     font-style: italic;
 }
-
 .light .header .title,
 .light .content p {
     color: rgba(0, 0, 0, 0.8);
 }
-
 .dark .header .title,
 .dark .content p {
     color: rgba(255, 255, 255, 0.8);
 }
-
 .light .header .info {
     color: rgba(0, 0, 0, 0.7);
 }
-
 .dark .header .info {
     color: rgba(255, 255, 255, 0.7);
 }
-
 .content {
     margin-top: 28px;
 }
-
 .content p {
     line-height: 24px;
     font-size: 15px;
     margin-top: 20px;
 }
-
 #boutme {
-    margin: 40px auto 80px;
-    padding: 40px 0;
+    margin: 60px auto 160px;
     position: relative;
     width: 540px;
     height: 400px;
 }
-
 #boomerang {
     background-color: #2477C3;
 }
-
 #fire {
     background-color: #000000;
 }
-
 #scuttle {}
-
 #columbia {
     background-image: url("../imgs/columbia.jpg");
     background-size: 100%;
@@ -247,20 +228,17 @@ footer {
     border-radius: 110px;
     margin: 40px auto 20px;
 }
-
 .gif {
     width: 220px;
     height: auto;
     margin: 16px auto;
 }
-
 .sketch {
     width: 220px;
     height: auto;
     margin: 30px 0;
     box-shadow: 0px 2px 5px #6A6A6A;
 }
-
 .userflow {
     width: 220px;
     height: auto;
@@ -269,13 +247,11 @@ footer {
     border-width: 1px;
     border-color: black;
 }
-
 .wireframe {
     width: 200px;
     height: auto;
     margin: 10px 0 0;
 }
-
 .mock {
     width: 200px;
     margin: 0;
@@ -284,22 +260,18 @@ footer {
     border-width: 1px;
     border-color: lightgrey;
 }
-
 .fadein {
     position: relative;
 }
-
 .fadein img {
     position: absolute;
     left: 0px;
     top: 20px;
 }
-
 .full {
     margin-top: 5px;
     width: 100%;
 }
-
 .compare img {
     display: inline;
     width: 120px;
@@ -308,15 +280,12 @@ footer {
     border-width: 1px;
     border-color: lightgrey;
 }
-
 .compare .first {
     margin-left: 0;
 }
-
 .compare .last {
     margin-right: 0;
 }
-
 .imac {
     width: 360px;
     height: auto;
@@ -324,12 +293,10 @@ footer {
     display: table-cell;
     vertical-align: middle;
 }
-
 .iphone {
     width: 500px;
     height: auto;
 }
-
 .ios {
     height: 360px;
     width: auto;
@@ -337,7 +304,6 @@ footer {
     display: table-cell;
     vertical-align: middle;
 }
-
 .placehold {
     display: none;
 }
@@ -350,42 +316,35 @@ div.container {
     margin: 20px auto 0;
     position: absolute;
 }
-
 #main-slider-space {
     overflow: hidden;
     width: 100%;
     height: 500px;
 }
-
 .slider-wrapper {
     position: relative;
     width: 1000%;
     height: 500px;
 }
-
 .main-slide {
     width: 100vw;
     height: 496px;
     float: left;
 }
-
 .stuff {
     width: 540px;
     height: 480px;
     margin: auto;
 }
-
 div.left {
     width: 260px;
     float: left;
 }
-
 div.right {
     display: block;
     width: 280px;
     float: right;
 }
-
 .slider-buttons {
     position: absolute;
     width: 60px;
@@ -394,17 +353,14 @@ div.right {
     text-align: center;
     opacity: 0.4;
 }
-
 .slider-buttons:hover {
     cursor: pointer;
     opacity: 0.8;
 }
-
 #main-slider-prev {
     left: 40px;
     background-image: url("../imgs/arrow_left.png");
 }
-
 #main-slider-next {
     right: 40px;
     background-image: url("../imgs/arrow_right.png");
@@ -426,28 +382,23 @@ div.right {
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
-
 .modalDialog:target {
     opacity: 1;
     pointer-events: auto;
 }
-
 .modalDialog > div {
     width: 90%;
     height: 0;
     position: relative;
     margin: 5% auto;
 }
-
 #openFlow > div {
     width: 65%;
     margin: 3% auto;
 }
-
 .modalimg {
     width: 100%;
 }
-
 .close {
     color: #FFFFFF;
     position: absolute;
@@ -455,7 +406,6 @@ div.right {
     right: -20px;
     top: -30px;
 }
-
 .close:hover {
     color: #00d9ff;
 }
