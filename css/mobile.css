@@ -1,6 +1,6 @@
 /* 	CSS
 	Sahir Jaggi
-	March 2015
+	November 2015
 */
 
 @media screen and (max-width: 800px) {
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-height: 620px) {
-    .screen {
+    .section {
         height: 610px;
         padding: 10px 0;
     }
@@ -42,7 +42,7 @@
         margin: 0 auto 5%;
         position: relative;
         width: 90%;
-        height: 420px;
+        height: 520px;
     }
     .self {
         width: 160px;
@@ -62,12 +62,19 @@
     .ios {
         width: 90%;
         height: auto;
-        margin: 0px auto;
+        margin: 20px auto;
     }
-    .line {
+    .switch,
+    .switch img {
         width: 100%;
+        margin: auto;
     }
-    .screen {
-        height: 98vw;
+    .section {
+        min-height: 0;
+        height: auto;
+        overflow: hidden;
+    }
+    #columbia {
+        min-height: 800px;   
     }
 }

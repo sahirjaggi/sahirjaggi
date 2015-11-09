@@ -151,6 +151,8 @@ footer {
     margin-left: -8px;
     width: 100vw;
     height: 90vh;
+    min-height: 600px;
+    max-height: 800px;
     padding: 5vh 0;
 }
 .description {
@@ -214,7 +216,7 @@ footer {
 #scuttle {}
 #columbia {
     background-image: url("../imgs/columbia.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 /* Images
@@ -271,12 +273,12 @@ footer {
     border-style: solid;
     border-width: 1px;
     border-color: lightgrey;
+    position: absolute;
 }
 .fadein {
     position: relative;
 }
 .fadein img {
-    position: absolute;
     left: 0px;
     top: 20px;
 }
