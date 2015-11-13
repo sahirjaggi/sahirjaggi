@@ -150,10 +150,10 @@ footer {
     margin-top: 0;
     margin-left: -8px;
     width: 100vw;
-    height: 90vh;
+    height: 88vh;
     min-height: 600px;
-    max-height: 800px;
-    padding: 5vh 0;
+    max-height: 700px;
+    padding: 6vh 0;
 }
 .description {
     width: 540px;
