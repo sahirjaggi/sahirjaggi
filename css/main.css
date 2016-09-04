@@ -1,6 +1,6 @@
 /* 	CSS
 	Sahir Jaggi
-	November 2015
+	September 2016
 */
 /* Typography
 ------------------------------------------------------------ */
@@ -201,11 +201,30 @@ footer {
     font-size: 15px;
     margin-top: 20px;
 }
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 #boutme {
     margin: 60px auto 160px;
     position: relative;
     width: 540px;
     height: 400px;
+}
+#blueapron {
+    background-image: url("../imgs/blueapron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#parsegon {}
+#rdv {
+  background-image: url("../imgs/rdv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #boomerang {
     background-color: #2477C3;
@@ -213,7 +232,11 @@ footer {
 #fire {
     background-color: #000000;
 }
-#scuttle {}
+#research {
+  background-image: url("../imgs/lab.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #columbia {
     background-image: url("../imgs/columbia.jpg");
     background-size: cover;
@@ -317,6 +340,23 @@ footer {
     margin: 40px auto;
     display: table-cell;
     vertical-align: middle;
+}
+.logo {
+    height: 120px;
+    width: auto;
+    margin: 20px auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+.algo {
+    height: 240px;
+    width: auto;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+.spacer {
+    height: 380px;
 }
 .placehold {
     display: none;
